@@ -66,10 +66,11 @@ Typically the following can be setup:
     Thread.sleep(1000)
 
 Commands can also be sent to the gpsd daemon such as:
-    - linker ! Version
-    - linker ! Poll
-    - linker ! Watch(true, true, true, 0, true, true, "", "")
-    - linker ! WatchThis(WatchObject(Some(true)))
+
+  - linker ! Version
+  - linker ! Poll
+  - linker ! Watch(true, true, true, 0, true, true, "", "")
+  - linker ! WatchThis(WatchObject(Some(true)))
 
 Note, to give the linker time to setup the connection and process the commands, it is
 advisable to wait for a second.
