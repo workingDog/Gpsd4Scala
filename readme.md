@@ -73,7 +73,7 @@ Commands can also be sent to the gpsd daemon such as:
   - linker ! WatchThis(WatchObject(Some(true)))
 
 Note, to give the linker time to setup the connection and process the commands, it is
-advisable to wait for a second.
+advisable to wait for a bit.
 
 The collector is where the data arrives, this is where you do something with it.
 Here is the typical structure of a collector actor showing the data arriving with the Collector(obj) message:
