@@ -43,7 +43,7 @@ Gpsd4Scala makes use of the JSON library spray-json from the [Spray](http://spra
 The source code and explanations for spray-json can be found [here](https://github.com/spray/spray-json).
 For convenience, jar files including spray-json associated dependency on [parboiled](https://github.com/sirthias/parboiled/wiki)
 are included here in the lib directory.
-Gpsd4Scala also uses [Akka](http://akka.io/).
+Gpsd4Scala also uses [Akka](http://akka.io/) and of course [Scala](http://www.scala-lang.org/).
 
 Currently (April 2013) Gpsd4Scala is based on connecting to gpsd-3.8, spray-json-2.10-1.2.3,
 using scala 2.10.1, Akka 2.2-M2 and I'm using IntelliJ IDEA 12.
