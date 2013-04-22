@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f37a7445-8cf0-435e-92d3-e56f7d3552fc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/akka_2_2_M3.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/akka_actor_2_10_2_2_SNAPSHOT.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/examples/Example1.scala" afterPath="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/examples/Example1.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/GPSdLinker.scala" afterPath="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/GPSdLinker.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gpsd4Scala.iml" afterPath="$PROJECT_DIR$/Gpsd4Scala.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/test/TestApp.scala" afterPath="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/test/TestApp.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -30,7 +24,7 @@
     <file path="/FileLogger.scala" changelist="f37a7445-8cf0-435e-92d3-e56f7d3552fc" time="1366520024581" ignored="false" />
     <file path="/Example1.scala" changelist="f37a7445-8cf0-435e-92d3-e56f7d3552fc" time="1366604542175" ignored="false" />
     <file path="/license.txt" changelist="f37a7445-8cf0-435e-92d3-e56f7d3552fc" time="1366589388060" ignored="false" />
-    <file path="/Dummy.txt" changelist="f37a7445-8cf0-435e-92d3-e56f7d3552fc" time="1366607303061" ignored="false" />
+    <file path="/Dummy.txt" changelist="f37a7445-8cf0-435e-92d3-e56f7d3552fc" time="1366608238926" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,19 +105,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GPSdLinker.scala" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="GPSdLinker.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/GPSdLinker.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="3" selection-start="279" selection-end="279" vertical-scroll-proportion="0.24235006">
+            <state line="13" column="24" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="readme.md" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Example1.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/examples/Example1.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="4" selection-start="626" selection-end="700" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readme.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/readme.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="18" selection-start="2418" selection-end="2418" vertical-scroll-proportion="0.0">
+            <state line="59" column="78" selection-start="2890" selection-end="2890" vertical-scroll-proportion="0.5199005">
               <folding />
             </state>
           </provider>
@@ -173,10 +176,10 @@
         <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/GpsdJsonProtocol.scala" />
         <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/GpsdParser.scala" />
         <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/GpsdClient.scala" />
-        <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/GPSdLinker.scala" />
         <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/test/TestApp.scala" />
         <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/examples/Example1.scala" />
+        <option value="$PROJECT_DIR$/readme.md" />
       </list>
     </option>
   </component>
@@ -589,7 +592,11 @@
       <created>1366606149040</created>
       <updated>1366606149040</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="initial commit">
+      <created>1366608250693</created>
+      <updated>1366608250693</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -741,20 +748,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="18" selection-start="2418" selection-end="2418" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/examples/Example1.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="66" selection-start="582" selection-end="582" vertical-scroll-proportion="0.40563992">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/test/TestApp.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="16" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0">
@@ -773,7 +766,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/GPSdLinker.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="3" selection-start="279" selection-end="279" vertical-scroll-proportion="0.24235006">
+        <state line="13" column="24" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/examples/Example1.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="4" selection-start="626" selection-end="700" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="78" selection-start="2890" selection-end="2890" vertical-scroll-proportion="0.5199005">
           <folding />
         </state>
       </provider>

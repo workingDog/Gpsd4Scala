@@ -55,9 +55,9 @@ using scala 2.10.1, Akka 2.2-M3 and I'm using IntelliJ IDEA 12.
 Typically the following can be setup:
 
     // create a collector that will receive the decoded gps data
-    val collector = system.actorOf(Props(new BasicCollector()))
+    val collector = system.actorOf(Props(classOf[BasicCollector]))
     // create a client session to connect to gpsd
-    val linker = system.actorOf(Props(new GPSdLinker("localhost", 2947)))
+    val linker = system.actorOf(Props(classOf[GPSdLinker], "localhost", 2947))
     // register the collector
     linker ! RegisterCollector(collector)
     Thread.sleep(1000)
