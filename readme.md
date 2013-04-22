@@ -26,11 +26,6 @@ into equivalent scala objects. See also [gpsd_json](http://catb.org/gpsd/gpsd_js
 the meaning of the JSON objects returned by gpsd.
 
 
-# Status
-
-Gpsd4Scala is still in development, not yet ready for use.
-
-
 # How to setup
 
 First download and install gpsd from http://www.catb.org/gpsd/.
@@ -102,5 +97,11 @@ records all data to a text file.
 The GoogleEarthCollector example shows the location in Google Earth as a placemark.
 Note this collector depends on [scalakml](https://github.com/workingDog/scalakml) and
 [scalaxal](https://github.com/workingDog/scalaxal) libraries.
+
+
+# Status
+
+Gpsd4Scala is still in development, not yet ready for use. No testing has been done, as I do not
+have a GPS device.
 
 

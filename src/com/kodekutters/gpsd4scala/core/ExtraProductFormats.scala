@@ -4,7 +4,6 @@ import spray.json._
 
 // this all thing should be removed TODO
 
-
 /**
  * Author: Ringo Wathelet
  * Date: 20/04/13 

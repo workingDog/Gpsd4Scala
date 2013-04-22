@@ -38,11 +38,12 @@ object GpsdJsonProtocol extends DefaultJsonProtocol with ExtraProductFormats {
 class GpsdParser {
 
   import GpsdJsonProtocol._
+
   /**
-   * parse the input ByteString which may contain more than one json object strings
+   * parse the input ByteString which may contain multiple json objects
    *
    * @param data the input ByteString to parse
-   * @return a TypeObject corresponding to the input json object
+   * @return an optional list of TypeObject corresponding to the input json objects
    */
   def parse(data: akka.util.ByteString): Option[List[TypeObject]] = {
     try {
@@ -58,6 +59,7 @@ class GpsdParser {
 
   /**
    * parse an assumed one json object
+   *
    * @param line a string representing one json object
    * @return the TypeObject representing the json object
    */
