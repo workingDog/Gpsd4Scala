@@ -1,7 +1,7 @@
 package com.kodekutters
 
 import akka.actor.ActorRef
-import com.kodekutters.gpsd4scala.types.TypeObject
+import com.kodekutters.gpsd4scala.types.{WatchObject, TypeObject}
 
 /**
  * Author: Ringo Wathelet
@@ -46,7 +46,10 @@ package object messages {
 
   case class Collect(message: TypeObject, others: Any*) extends Event
 
-  case class Watch(enable: Boolean, dumpData: Boolean, device: String) extends Event
+  case class WatchThis(watchObj: WatchObject) extends Event
+
+  case class Watch(enable: Boolean, json: Boolean, nmea: Boolean, raw: Int,
+                   scaled: Boolean, timing: Boolean, device: String, remote: String) extends Event
 
   //---------------------------------------------------------------
   //--------------ComplexEvent------------------------------------

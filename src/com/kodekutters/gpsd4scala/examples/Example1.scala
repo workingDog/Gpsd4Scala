@@ -28,8 +28,9 @@ object Example1 {
     // start the client to connect to the gpsd server
     linker ! Start
     Thread.sleep(1000)
-    // example of sending a message to the gpsd server
-    linker ! Watch(true, true, "")
+    // example of sending a command to gpsd
+    linker ! Poll
+    Thread.sleep(1000)
     // close any collectors that need closing (e.g. file loggers)
     linker ! CloseCollectors
 

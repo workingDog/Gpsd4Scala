@@ -65,6 +65,15 @@ Typically the following can be setup:
     linker ! Start
     Thread.sleep(1000)
 
+Commands can also be sent to the gpsd daemon such as:
+    linker ! Version
+    linker ! Poll
+    linker ! Watch(true, true, true, 0, true, true, "", "")
+    linker ! WatchThis(WatchObject(Some(true)))
+
+Note, to give the linker time to setup the connection and process the commands, it is
+advisable to wait for a second.
+
 The collector is where the data arrives, this is where you do something with it.
 Here is the typical structure of a collector actor showing the data arriving with the Collector(obj) message:
 

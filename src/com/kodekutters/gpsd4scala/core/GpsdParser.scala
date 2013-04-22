@@ -24,23 +24,22 @@ object GpsdJsonProtocol extends DefaultJsonProtocol with ExtraProductFormats {
   implicit val PPSObjectFormat = jsonFormat5(PPSObject)
   implicit val ErrorObjectFormat = jsonFormat1(ErrorObject)
 
-  implicit val ALMANACObjectFormat = jsonFormat12(ALMANACObject)
-  implicit val EPHEM1ObjectFormat = jsonFormat11(EPHEM1Object)
-  implicit val EPHEM2ObjectFormat = jsonFormat11(EPHEM2Object)
-  implicit val EPHEM3ObjectFormat = jsonFormat9(EPHEM3Object)
-  implicit val ERDObjectFormat = jsonFormat2(ERDObject)
-  implicit val HEALTHObjectFormat = jsonFormat3(HEALTHObject)
-  implicit val HEALTH2ObjectFormat = jsonFormat3(HEALTH2Object)
-  implicit val IONOObjectFormat = jsonFormat16(IONOObject)
-  implicit val SUBFRAMEObjectFormat = jsonFormat15(SUBFRAMEObject)
+//  implicit val ALMANACObjectFormat = jsonFormat12(ALMANACObject)
+//  implicit val EPHEM1ObjectFormat = jsonFormat11(EPHEM1Object)
+//  implicit val EPHEM2ObjectFormat = jsonFormat11(EPHEM2Object)
+//  implicit val EPHEM3ObjectFormat = jsonFormat9(EPHEM3Object)
+//  implicit val ERDObjectFormat = jsonFormat2(ERDObject)
+//  implicit val HEALTHObjectFormat = jsonFormat3(HEALTHObject)
+//  implicit val HEALTH2ObjectFormat = jsonFormat3(HEALTH2Object)
+//  implicit val IONOObjectFormat = jsonFormat16(IONOObject)
+//  implicit val SUBFRAMEObjectFormat = jsonFormat15(SUBFRAMEObject)
 }
 
 class GpsdParser {
 
   import GpsdJsonProtocol._
-
   /**
-   * parse the input ByteString which may contain more than one json strings
+   * parse the input ByteString which may contain more than one json object strings
    *
    * @param data the input ByteString to parse
    * @return a TypeObject corresponding to the input json object
@@ -49,24 +48,22 @@ class GpsdParser {
     try {
       // split the data string on a new line, in case it has multiple json objects
       val lines = data.utf8String.trim.split("\\r?\\n")
-      //      lines.foreach(x => println("line="+x.trim))
-      val results = lines collect {
-        case line => parseOne(line.trim)
-      }
+      val results = lines collect { case line => parseOne(line.trim) }
       Some(results.flatten.toList)
     } catch {
-      case _: Throwable => println("in GpsdParser could not decode: ++" + data.utf8String + "++")
+      case _: Throwable => println("in GpsdParser could not decode: " + data.utf8String)
       None
     }
   }
 
-  // just parse an assumed one json object
-  private def parseOne(line: String): Option[TypeObject] = {
+  /**
+   * parse an assumed one json object
+   * @param line a string representing one json object
+   * @return the TypeObject representing the json object
+   */
+  def parseOne(line: String): Option[TypeObject] = {
     try {
       val jsonObj = line.asJson
-
-  //    jsonObj.asJsObject.fields
-
       val clazz = jsonObj.asJsObject.getFields("class").head
       clazz match {
         case JsString("GST") => Some(jsonObj.convertTo[GSTObject])
@@ -81,8 +78,7 @@ class GpsdParser {
         case JsString("PPS") => Some(jsonObj.convertTo[PPSObject])
         case JsString("ERROR") => Some(jsonObj.convertTo[ErrorObject])
 
-        case JsString("SUBFRAME") => Some(jsonObj.convertTo[SUBFRAMEObject])
-
+        //        case JsString("SUBFRAME") => Some(jsonObj.convertTo[SUBFRAMEObject])
         //        case JsString("ALMANAC") => Some(jsonObj.convertTo[ALMANACObject])
         //        case JsString("EPHEM1") => Some(jsonObj.convertTo[EPHEM1Object])
         //        case JsString("EPHEM2") => Some(jsonObj.convertTo[EPHEM2Object])
@@ -92,9 +88,10 @@ class GpsdParser {
         //        case JsString("HEALTH2") => Some(jsonObj.convertTo[HEALTH2Object])
         //        case JsString("IONO") => Some(jsonObj.convertTo[IONOObject])
         //        case JsString("SUBFRAME") => Some(jsonObj.convertTo[SUBFRAMEObject])
-        case _ => None
-      }
+
+      case _ => None
     }
   }
+}
 
 }

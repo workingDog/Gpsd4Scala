@@ -13,8 +13,9 @@ import scala._
 // http://catb.org/gpsd/client-howto.html and gpsd_json.c
 
 //------------------------------------------------------------------------
-//------------------------CORE SOCKET PROTOCOL----------------------------
+//--------------------CORE SOCKET PROTOCOL REPORTS------------------------
 //------------------------------------------------------------------------
+
 trait TypeObject {}
 
 // todo ...  missing mag because case class too long
@@ -35,16 +36,6 @@ case class GSTObject(tag: Option[String] = None, device: Option[String] = None,
                      orient: Option[Double] = None, lat: Option[Double] = None,
                      lon: Option[Double] = None, alt: Option[Double] = None) extends TypeObject
 
-case class DeviceObject(path: Option[String] = None, activated: Option[String] = None,
-                        flags: Option[Int] = None, driver: Option[String] = None,
-                        subtype: Option[String] = None, bps: Option[Int] = None,
-                        parity: Option[String] = None, stopbits: Option[Int] = None,
-                        native: Option[Int] = None, cycle: Option[Double] = None,
-                        mincycle: Option[Double] = None) extends TypeObject
-
-case class DevicesObject(devices: List[DeviceObject] = List[DeviceObject](),
-                         remote: Option[String] = None) extends TypeObject
-
 case class SATObject(PRN: Option[Int] = None, az: Option[Double] = None,
                      el: Option[Double] = None, ss: Option[Double] = None,
                      used: Option[Boolean] = None) extends TypeObject
@@ -63,6 +54,22 @@ case class TPVObject(tag: Option[String] = None, device: Option[String] = None,
                      lat: Option[Double] = None, lon: Option[Double] = None, alt: Option[Double] = None,
                      climb: Option[Double] = None, speed: Option[Double] = None, track: Option[Double] = None) extends TypeObject
 
+case class ErrorObject(message: Option[String] = None) extends TypeObject
+
+//------------------------------------------------------------------------
+//----------------------------- COMMANDS ---------------------------------
+//------------------------------------------------------------------------
+
+case class DeviceObject(path: Option[String] = None, activated: Option[String] = None,
+                        flags: Option[Int] = None, driver: Option[String] = None,
+                        subtype: Option[String] = None, bps: Option[Int] = None,
+                        parity: Option[String] = None, stopbits: Option[Int] = None,
+                        native: Option[Int] = None, cycle: Option[Double] = None,
+                        mincycle: Option[Double] = None) extends TypeObject
+
+case class DevicesObject(devices: List[DeviceObject] = List[DeviceObject](),
+                         remote: Option[String] = None) extends TypeObject
+
 case class VersionObject(release: Option[String] = None, rev: Option[String] = None,
                          proto_major: Option[Double] = None, proto_minor: Option[Double] = None,
                          remote: Option[String] = None) extends TypeObject
@@ -80,8 +87,6 @@ case class PollObject(time: Option[String] = None, active: Option[Int] = None,
 case class PPSObject(device: Option[String] = None, real_sec: Option[Double] = None,
                      real_musec: Option[Double] = None, clock_sec: Option[Double] = None,
                      clock_musec: Option[Double] = None) extends TypeObject
-
-case class ErrorObject(message: Option[String] = None) extends TypeObject
 
 //------------------------------------------------------------------------
 //----------------------------- SUBFRAME ---------------------------------
