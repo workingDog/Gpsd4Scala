@@ -1,0 +1,46 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Gpsd4Scala:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Gpsd4Scala_jar</output-path>
+    <root id="archive" name="Gpsd4Scala.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="Gpsd4Scala" />
+      <element id="extracted-dir" path="$USER_HOME$/scalaxalgithub/scalaxal/bin/scalaxal.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/scala/scala-latest/lib/scala-compiler.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/scala/scala-latest/lib/scala-library.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/scala/scala-latest/lib/scala-reflect.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/scala/scala-latest/lib/jline.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/scala/scala-latest/lib/scala-actors.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/scala/scala-latest/lib/scala-partest.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/scala/scala-latest/lib/scala-swing.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/scala/scala-latest/lib/scalap.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/scala/scala-latest/lib/scalafx_2.10-1.0.0-M2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/akka/akka-latest/lib/akka/slf4j-api-1.7.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/akka/akka-latest/lib/akka/jnr-constants-0.8.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/akka/akka-latest/lib/akka/akka-mailboxes-common_2.10-2.2-M3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/akka/akka-latest/lib/akka/scala-reflect-2.10.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/akka/akka-latest/lib/akka/akka-transactor_2.10-2.2-M3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/akka/akka-latest/lib/akka/protobuf-java-2.4.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/akka/akka-latest/lib/akka/akka-slf4j_2.10-2.2-M3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/akka/akka-latest/lib/akka/akka-agent_2.10-2.2-M3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/akka/akka-latest/lib/akka/scalabuff-runtime_2.10-1.1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/akka/akka-latest/lib/akka/jna-3.0.9.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/akka/akka-latest/lib/akka/akka-remote_2.10-2.2-M3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/akka/akka-latest/lib/akka/akka-contrib_2.10-2.2-M3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/akka/akka-latest/lib/akka/akka-file-mailbox_2.10-2.2-M3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/akka/akka-latest/lib/akka/akka-actor_2.10-2.2-M3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/akka/akka-latest/lib/akka/uncommons-maths-1.2.2a.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/akka/akka-latest/lib/akka/akka-dataflow_2.10-2.2-M3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/akka/akka-latest/lib/akka/config-1.0.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/akka/akka-latest/lib/akka/scala-stm_2.10-0.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/akka/akka-latest/lib/akka/netty-3.6.5.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/scalakmlgithub/scalakml/bin/scalakml.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/scala/scala-latest/lib/scala-actors-migration.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/scala/scala-latest/lib/typesafe-config.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/akka/spray/spray-json-2.10-1.2.3/spray-json_2.10-1.2.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/akka/spray/parboiled/parboiled-core-1.1.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/akka/spray/parboiled/parboiled-scala_2.10.0-RC3-1.1.4.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

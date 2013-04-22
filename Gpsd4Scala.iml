@@ -19,6 +19,8 @@
     <orderEntry type="library" name="scala-2.10.1" level="project" />
     <orderEntry type="library" name="spray-json_2.10-1.2.3" level="project" />
     <orderEntry type="library" name="akka-2.2-M3" level="project" />
+    <orderEntry type="library" name="scalaxal" level="project" />
+    <orderEntry type="library" name="scalakml" level="project" />
   </component>
 </module>
 

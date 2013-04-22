@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="scalakml">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/scalakmlgithub/scalakml/bin/scalakml.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
