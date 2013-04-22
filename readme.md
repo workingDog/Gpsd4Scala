@@ -21,8 +21,10 @@ a C++ wrapper class, and a Python module that developers of gpsd-aware applicati
 can use to encapsulate all communication with gpsd. Third-party client bindings
 for Java and Perl also exist."
 
-gpsd data is provided as [JSON](http://www.json.org/) structures that are decoded by Gpsd4Scala
-into equivalent scala objects.
+gpsd data is provided as [JSON](http://www.json.org/) objects that are decoded by Gpsd4Scala
+into equivalent scala objects. See also [gpsd_json](http://catb.org/gpsd/gpsd_json.html) for
+the meaning of the JSON objects returned by gpsd.
+
 
 # Status
 
