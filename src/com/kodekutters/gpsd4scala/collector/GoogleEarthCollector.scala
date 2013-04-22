@@ -19,7 +19,7 @@
 // */
 //
 ///**
-// * collect decoded nmea GPRMC sentences, create a NetworkLink file and a kml file
+// * collect decoded json messages, create a NetworkLink file and a kml file
 // * with a placemark at the GPS location.
 // * Launch Google Earth by double clicking of the NetworkLink file.
 // * The locations in the kml file are poled by the NetworkLink every 2 seconds in this example.

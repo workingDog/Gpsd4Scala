@@ -18,7 +18,7 @@ import scala._
 
 trait TypeObject {}
 
-// todo ...  missing mag because case class too long
+// todo ...  missing mag because would make case class too long, > 22
 case class ATTObject(tag: Option[String] = None, device: Option[String] = None, time: Option[String] = None,
                      heading: Option[Double] = None,
                      pitch: Option[Double] = None, pitch_st: Option[String] = None,

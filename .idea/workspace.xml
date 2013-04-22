@@ -2,31 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f37a7445-8cf0-435e-92d3-e56f7d3552fc" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/CollectorManagement.scala" afterPath="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/CollectorManagement.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/examples/Example1.scala" afterPath="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/examples/Example1.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/collector/FileLogger.scala" afterPath="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/collector/FileLogger.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/test/TestApp.scala" afterPath="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/test/TestApp.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/GPSdLinker.scala" afterPath="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/GPSdLinker.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/collector/GoogleEarthCollector.scala" afterPath="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/collector/GoogleEarthCollector.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/GpsdClient.scala" afterPath="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/GpsdClient.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/GpsdParser.scala" afterPath="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/GpsdParser.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/types/TypeObject.scala" afterPath="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/types/TypeObject.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/messages/package.scala" afterPath="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/messages/package.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Gpsd4Scala.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/GPSdLinker.scala" changelist="f37a7445-8cf0-435e-92d3-e56f7d3552fc" time="1366517903663" ignored="false" />
+    <file path="/GPSdLinker.scala" changelist="f37a7445-8cf0-435e-92d3-e56f7d3552fc" time="1366630916224" ignored="false" />
     <file path="/ProcessorManagement.scala" changelist="f37a7445-8cf0-435e-92d3-e56f7d3552fc" time="1366268444627" ignored="false" />
-    <file path="/GpsdClient.scala" changelist="f37a7445-8cf0-435e-92d3-e56f7d3552fc" time="1366605146995" ignored="false" />
+    <file path="/GpsdClient.scala" changelist="f37a7445-8cf0-435e-92d3-e56f7d3552fc" time="1366631238479" ignored="false" />
     <file path="/DataHandler.scala" changelist="f37a7445-8cf0-435e-92d3-e56f7d3552fc" time="1366348243551" ignored="false" />
-    <file path="/package.scala" changelist="f37a7445-8cf0-435e-92d3-e56f7d3552fc" time="1366600166331" ignored="false" />
-    <file path="/GpsdParser.scala" changelist="f37a7445-8cf0-435e-92d3-e56f7d3552fc" time="1366615511018" ignored="false" />
-    <file path="/TypeObject.scala" changelist="f37a7445-8cf0-435e-92d3-e56f7d3552fc" time="1366596194994" ignored="false" />
-    <file path="/CollectorManagement.scala" changelist="f37a7445-8cf0-435e-92d3-e56f7d3552fc" time="1366518386417" ignored="false" />
+    <file path="/package.scala" changelist="f37a7445-8cf0-435e-92d3-e56f7d3552fc" time="1366631997981" ignored="false" />
+    <file path="/GpsdParser.scala" changelist="f37a7445-8cf0-435e-92d3-e56f7d3552fc" time="1366631774782" ignored="false" />
+    <file path="/TypeObject.scala" changelist="f37a7445-8cf0-435e-92d3-e56f7d3552fc" time="1366632076053" ignored="false" />
+    <file path="/CollectorManagement.scala" changelist="f37a7445-8cf0-435e-92d3-e56f7d3552fc" time="1366631875156" ignored="false" />
     <file path="/TestApp.scala" changelist="f37a7445-8cf0-435e-92d3-e56f7d3552fc" time="1366617853347" ignored="false" />
     <file path="/a.dummy" changelist="f37a7445-8cf0-435e-92d3-e56f7d3552fc" time="1366329655978" ignored="false" />
     <file path="/BasicCollector.scala" changelist="f37a7445-8cf0-435e-92d3-e56f7d3552fc" time="1366519375824" ignored="false" />
     <file path="/JsonForFormat16.scala" changelist="f37a7445-8cf0-435e-92d3-e56f7d3552fc" time="1366423213556" ignored="false" />
     <file path="/ExtraProductFormats.scala" changelist="f37a7445-8cf0-435e-92d3-e56f7d3552fc" time="1366614253136" ignored="false" />
     <file path="/readme.md" changelist="f37a7445-8cf0-435e-92d3-e56f7d3552fc" time="1366618236534" ignored="false" />
-    <file path="/FileLogger.scala" changelist="f37a7445-8cf0-435e-92d3-e56f7d3552fc" time="1366618316896" ignored="false" />
-    <file path="/Example1.scala" changelist="f37a7445-8cf0-435e-92d3-e56f7d3552fc" time="1366604542175" ignored="false" />
+    <file path="/FileLogger.scala" changelist="f37a7445-8cf0-435e-92d3-e56f7d3552fc" time="1366632243859" ignored="false" />
+    <file path="/Example1.scala" changelist="f37a7445-8cf0-435e-92d3-e56f7d3552fc" time="1366631928585" ignored="false" />
     <file path="/license.txt" changelist="f37a7445-8cf0-435e-92d3-e56f7d3552fc" time="1366589388060" ignored="false" />
-    <file path="/Dummy.txt" changelist="f37a7445-8cf0-435e-92d3-e56f7d3552fc" time="1366617509258" ignored="false" />
+    <file path="/Dummy.txt" changelist="f37a7445-8cf0-435e-92d3-e56f7d3552fc" time="1366630732566" ignored="false" />
+    <file path="/GoogleEarthCollector.scala" changelist="f37a7445-8cf0-435e-92d3-e56f7d3552fc" time="1366632282726" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +48,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -78,6 +84,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -87,33 +94,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TestApp.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/test/TestApp.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="28" selection-start="1028" selection-end="1043" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="readme.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/readme.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="54" selection-start="4518" selection-end="4518" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileLogger.scala" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/collector/FileLogger.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="26" selection-start="495" selection-end="495" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="BasicCollector.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/collector/BasicCollector.scala">
           <provider selected="true" editor-type-id="text-editor">
@@ -123,19 +103,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GpsdParser.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/GpsdParser.scala">
+      <file leaf-file-name="GpsdClient.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/GpsdClient.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="5" selection-start="2328" selection-end="2328" vertical-scroll-proportion="0.0">
+            <state line="76" column="61" selection-start="2311" selection-end="2311" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GpsdClient.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/GpsdClient.scala">
+      <file leaf-file-name="package.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/messages/package.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="66" selection-start="762" selection-end="762" vertical-scroll-proportion="0.0">
+            <state line="56" column="0" selection-start="1557" selection-end="1557" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GoogleEarthCollector.scala" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/collector/GoogleEarthCollector.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="22" selection-start="899" selection-end="899" vertical-scroll-proportion="0.20526893">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GPSdLinker.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/GPSdLinker.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="62" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readme.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/readme.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="95" column="54" selection-start="4518" selection-end="4518" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -165,26 +172,26 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/howtogpsd.txt" />
-        <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/CollectorManagement.scala" />
         <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/collector/BasicCollector.scala" />
-        <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/collector/GoogleEarthCollector.scala" />
         <option value="$PROJECT_DIR$/license.txt" />
-        <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/types/TypeObject.scala" />
-        <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/messages/package.scala" />
         <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/GpsdJsonProtocol.scala" />
-        <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/GpsdClient.scala" />
-        <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/GPSdLinker.scala" />
-        <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/examples/Example1.scala" />
         <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/ExtraProductFormats.scala" />
-        <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/GpsdParser.scala" />
         <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/test/TestApp.scala" />
         <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/GPSdLinker.scala" />
+        <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/GpsdClient.scala" />
+        <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/GpsdParser.scala" />
+        <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/CollectorManagement.scala" />
+        <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/examples/Example1.scala" />
+        <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/messages/package.scala" />
+        <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/types/TypeObject.scala" />
         <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/collector/FileLogger.scala" />
+        <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/collector/GoogleEarthCollector.scala" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="195" />
+    <option name="x" value="168" />
     <option name="y" value="28" />
     <option name="width" value="1706" />
     <option name="height" value="1149" />
@@ -250,6 +257,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="gpsd4scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="types" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gpsd4Scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gpsd4Scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gpsd4scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -390,9 +423,9 @@
     <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager" selected="Application.TestApp">
     <configuration default="false" name="TestApp" type="Application" factoryName="Application" temporary="true">
@@ -425,19 +458,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -463,6 +483,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -612,11 +645,15 @@
       <created>1366615907927</created>
       <updated>1366615907928</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="initial commit">
+      <created>1366618356467</created>
+      <updated>1366618356467</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="195" y="28" width="1706" height="1149" extended-state="0" />
+    <frame x="168" y="28" width="1706" height="1149" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -627,13 +664,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.08746356" sideWeight="0.99941826" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.08746356" sideWeight="0.99941826" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16204819" sideWeight="0.66472304" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33527696" sideWeight="0.97973365" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16204819" sideWeight="0.91253644" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33527696" sideWeight="0.97973365" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -707,11 +744,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/collector/GoogleEarthCollector.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="29" selection-start="881" selection-end="901" vertical-scroll-proportion="0.58870167" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/.name">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -722,31 +754,9 @@
         <state line="4" column="21" selection-start="73" selection-end="73" vertical-scroll-proportion="0.16955684" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/types/TypeObject.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="58" selection-start="4047" selection-end="4047" vertical-scroll-proportion="0.13002364" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/examples/Example1.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="20" selection-start="326" selection-end="326" vertical-scroll-proportion="0.11015912" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/GPSdLinker.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="24" selection-start="279" selection-end="279" vertical-scroll-proportion="0.13463892" />
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/scalaGPS/gpsd/gpsd-3.8/gpsd_json.c">
       <provider selected="true" editor-type-id="text-editor">
         <state line="418" column="21" selection-start="14264" selection-end="14264" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/messages/package.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="9" selection-start="798" selection-end="798" vertical-scroll-proportion="0.9694002">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/ExtraProductFormats.scala">
@@ -754,16 +764,51 @@
         <state line="11" column="12" selection-start="171" selection-end="171" vertical-scroll-proportion="0.15587045" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/GpsdClient.scala">
+    <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/GPSdLinker.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="66" selection-start="762" selection-end="762" vertical-scroll-proportion="0.0">
+        <state line="33" column="62" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/GpsdParser.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="5" selection-start="2328" selection-end="2328" vertical-scroll-proportion="0.0">
+        <state line="76" column="44" selection-start="2874" selection-end="2874" vertical-scroll-proportion="0.94505495">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/CollectorManagement.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="71" selection-start="429" selection-end="429" vertical-scroll-proportion="0.24175824">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/examples/Example1.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="54" selection-start="990" selection-end="990" vertical-scroll-proportion="0.63736266">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/GpsdClient.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="61" selection-start="2311" selection-end="2311" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/test/TestApp.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="28" selection-start="1028" selection-end="1043" vertical-scroll-proportion="0.61538464">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/types/TypeObject.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="0" selection-start="5463" selection-end="5463" vertical-scroll-proportion="2.048583">
           <folding />
         </state>
       </provider>
@@ -771,13 +816,6 @@
     <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/collector/BasicCollector.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="28" selection-start="605" selection-end="649" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/test/TestApp.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="28" selection-start="1028" selection-end="1043" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -791,7 +829,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/collector/FileLogger.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="26" selection-start="495" selection-end="495" vertical-scroll-proportion="0.0">
+        <state line="38" column="45" selection-start="998" selection-end="998" vertical-scroll-proportion="0.74725276">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/messages/package.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="0" selection-start="1557" selection-end="1557" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/collector/GoogleEarthCollector.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="22" selection-start="899" selection-end="899" vertical-scroll-proportion="0.20526893">
           <folding />
         </state>
       </provider>

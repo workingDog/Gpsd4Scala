@@ -10,6 +10,10 @@ import spray.json._
  * Version: 1
  */
 
+/**
+ * set of implicits including additional jsonFormats
+ * ref: https://github.com/spray/spray-json
+ */
 object GpsdJsonProtocol extends DefaultJsonProtocol with ExtraProductFormats {
   implicit val GSTObjectFormat = jsonFormat10(GSTObject)
   implicit val ATTObjectFormat = jsonFormat19(ATTObject)
@@ -35,15 +39,20 @@ object GpsdJsonProtocol extends DefaultJsonProtocol with ExtraProductFormats {
 //  implicit val SUBFRAMEObjectFormat = jsonFormat15(SUBFRAMEObject)
 }
 
+/**
+ * the parser decoding json objects into corresponding scala objects
+ */
 class GpsdParser {
 
   import GpsdJsonProtocol._
 
   /**
    * parse the input ByteString which may contain multiple json objects
+   * into a corresponding list of scala objects
    *
-   * @param data the input ByteString to parse
-   * @return an optional list of TypeObject corresponding to the input json objects
+   * @param data the input ByteString to parse, this is split on new line "\\r?\\n"
+   *             to extract possible multiple json objects
+   * @return an optional list of TypeObjects corresponding to the input json objects
    */
   def parse(data: akka.util.ByteString): Option[List[TypeObject]] = {
     try {
@@ -52,20 +61,20 @@ class GpsdParser {
       val results = lines collect { case line => parseOne(line.trim) }
       Some(results.flatten.toList)
     } catch {
-      case _: Throwable => println("in GpsdParser could not decode: " + data.utf8String)
-      None
+      case _: Throwable => None
     }
   }
 
   /**
-   * parse an assumed one json object
+   * parse a string assumed to be only one json object
    *
    * @param line a string representing one json object
-   * @return the TypeObject representing the json object
+   * @return the option of a TypeObject representing the json object
    */
   def parseOne(line: String): Option[TypeObject] = {
     try {
       val jsonObj = line.asJson
+      // expect only one "class" json object
       val clazz = jsonObj.asJsObject.getFields("class").head
       clazz match {
         case JsString("GST") => Some(jsonObj.convertTo[GSTObject])

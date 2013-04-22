@@ -31,11 +31,7 @@ class GPSdLinker(address: java.net.InetSocketAddress) extends Actor with ActorLo
     case _ => Restart
   }
 
-  def receive = collectorManagement orElse gpsdLinkerReceive
-
-  def gpsdLinkerReceive: Receive = {
-    // forward to the client
-    case x => gpsdClient ! x
-  }
+  // the messages are processed first in collectorManagement, then passed onto the client actor
+  def receive = collectorManagement orElse  { case x => gpsdClient ! x }
 
 }

@@ -13,9 +13,9 @@ import com.kodekutters.gpsd4scala.types.TypeObject
  */
 
 /**
- * a simple plain text file logger that records all messages received
+ * example of a simple plain text file logger that records all messages received
  * Note: a CloseCollectors message should be sent to the FileLogger
- * to close the text file.
+ * before ending the session to close the text file.
  */
 object FileLogger {
   def apply(fileName: String): FileLogger = new FileLogger(fileName)
@@ -36,8 +36,9 @@ class FileLogger(file: File) extends Actor with Collector with ActorLogging {
       writer.close()
   }
 
+  // example of writing something to the file
   def collect(info: TypeObject) {
-    writer.write(info.toString + ",\n")
+    writer.write(info.toString + "\n")
   }
 }
 

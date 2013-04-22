@@ -16,7 +16,7 @@ import spray.json._
  */
 
 /**
- * the client that connects to the gpsd daemon.
+ * the client actor that connects to the gpsd daemon.
  *
  * @param address of the gpsd server
  * @param collectorList the list of collectors
@@ -32,63 +32,49 @@ class GpsdClient(val address: InetSocketAddress, val collectorList: mutable.Hash
 
   def receive = {
 
-    case Start => println("in GpsdClient Start: " + address.toString)
-    IO(Tcp) ! Connect(address)
+    case Start => IO(Tcp) ! Connect(address)
 
-    case Stop => println("in GpsdClient Stop")
-    sender ! Tcp.Close
-    self ! Close
+    case Stop =>
+      sender ! Tcp.Close
+      self ! Close
 
     case Pause => println("in GpsdClient Pause")
 
-    case CommandFailed(_: Connect) => println("in GpsdClient CommandFailed")
-    context stop self
+    case CommandFailed(_: Connect) => context stop self
 
-    case c @ Connected(remote, local) => println("in GpsdClient Connected remote=" + remote + " local=" + local)
-    val connection = sender
-    connection ! Register(self)
-    context become {
+    case c @ Connected(remote, local) =>
+      val connection = sender
+      connection ! Register(self)
+      context become {
 
-      case Received(data) =>
-        val decodedList = parser.parse(data)
-        if (decodedList.isDefined)
-          collectorList.foreach(collector => decodedList.get.foreach(dataObj => collector ! Collect(dataObj)))
+        case Received(data) =>
+          val decodedList = parser.parse(data)
+          if (decodedList.isDefined)
+            collectorList.foreach(collector => decodedList.get.foreach(dataObj => collector ! Collect(dataObj)))
 
-      case Watch(enable, json, nmea, raw, scaled, timing, device, remote) =>
-        println("in GpsdClient sending Watch")
-        val watchObj = WatchObject(Option(enable), Option(json), Option(nmea), Option(raw), Option(scaled), Option(timing), Option(device), Option(remote))
-        self ! WatchThis(watchObj)
+        case Watch(enable, json, nmea, raw, scaled, timing, device, remote) =>
+          val watchObj = WatchObject(Option(enable), Option(json), Option(nmea), Option(raw), Option(scaled), Option(timing), Option(device), Option(remote))
+          self ! WatchThis(watchObj)
 
-      case WatchThis(watchObj) =>
-        println("in GpsdClient sending WatchThis(watchObj)")
-        connection ! Write(ByteString("?WATCH=" + watchObj.toJson))
+        case WatchThis(watchObj) => connection ! Write(ByteString("?WATCH=" + watchObj.toJson))
 
-      case Poll =>
-        println("in GpsdClient sending Poll")
-        connection ! Write(ByteString("?POLL;"))
+        case Poll => connection ! Write(ByteString("?POLL;"))
 
-      case Version =>
-        println("in GpsdClient sending Version")
-        connection ! Write(ByteString("?VERSION;"))
+        case Version => connection ! Write(ByteString("?VERSION;"))
 
-      case CommandFailed(w: Write) => log.info("\nin GpsdClient CommandFailed")
+        case CommandFailed(w: Write) => log.info("\nin GpsdClient CommandFailed ", w)
 
-      case Close =>
-        println("in GpsdClient Connected Close")
-        connection ! Close
+        case Close => connection ! Close
 
-      case data: ByteString => println("in GpsdClient Connected write data")
-      connection ! Write(data)
+        case data: ByteString => connection ! Write(data)
 
-      case _: ConnectionClosed =>
-        println("in GpsdClient Connected ConnectionClosed")
-        context stop self
+        case _: ConnectionClosed => context stop self
 
-      case x => log.info("\nin GpsdClient Connected x=" + x.toString)
+        case x => log.info("\nin GpsdClient message not recognised: " + x.toString)
 
-    }
+      }
 
-    case x => log.info("\nin GpsdClient x=" + x.toString)
+    case x => log.info("\nin GpsdClient message not processed: " + x.toString)
 
   }
 
