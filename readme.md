@@ -97,7 +97,8 @@ message sent to it (via the linker) to close the file.
 
 The GoogleEarthCollector example shows the location in Google Earth as a placemark.
 Note this collector depends on [scalakml](https://github.com/workingDog/scalakml) and
-[scalaxal](https://github.com/workingDog/scalaxal) libraries.
+[scalaxal](https://github.com/workingDog/scalaxal) libraries. These two libraries are included
+here in the lib directory.
 
 
 # Status
