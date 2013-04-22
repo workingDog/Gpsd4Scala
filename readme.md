@@ -65,7 +65,7 @@ Typically the following can be setup:
     linker ! Start
     Thread.sleep(1000)
 
-Commands can also be sent to the gpsd daemon such as:
+Other commands can also be sent to the gpsd daemon such as:
 
   - linker ! Version
   - linker ! Poll
