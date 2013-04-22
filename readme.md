@@ -77,9 +77,8 @@ The collector is where the data arrives, this is where you do something with it.
 Here is the typical structure of a collector actor showing the data arriving with the Collector(obj) message:
 
     class BasicCollector extends Actor with Collector {
-      def receive = {
-        case Collect(obj) => collect(obj)
-      }
+      def receive = { case Collect(obj) => collect(obj) }
+
       def collect(obj: TypeObject) {
         obj match {
           case x: PollObject => println("PollObject: " + obj.toString())
@@ -101,7 +100,7 @@ Note this collector depends on [scalakml](https://github.com/workingDog/scalakml
 
 # Status
 
-Gpsd4Scala is still in development, not yet ready for use. No testing has been done, as I do not
+Gpsd4Scala is still in development, is not yet ready for use. No testing has been done, as I do not
 have a GPS device.
 
 
