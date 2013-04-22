@@ -77,6 +77,7 @@ The collector is where the data arrives, this is where you do something with it.
 Here is the typical structure of a collector actor showing the data arriving with the Collector(obj) message:
 
     class BasicCollector extends Actor with Collector {
+
       def receive = { case Collect(obj) => collect(obj) }
 
       def collect(obj: TypeObject) {
@@ -90,8 +91,9 @@ Here is the typical structure of a collector actor showing the data arriving wit
       }
     }
 
-There are a few example collectors (in the collector directory). The FileLogger simply
-records all data to a text file.
+There are a few example collectors in the collector directory. The FileLogger simply
+records all data to a text file. Note that this collector needs to have the CloseCollectors
+message sent to it (via the linker) to close the file.
 
 The GoogleEarthCollector example shows the location in Google Earth as a placemark.
 Note this collector depends on [scalakml](https://github.com/workingDog/scalakml) and

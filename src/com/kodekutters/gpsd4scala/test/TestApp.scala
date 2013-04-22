@@ -6,6 +6,7 @@ import com.kodekutters.messages._
 import com.kodekutters.gpsd4scala.collector.BasicCollector
 import com.kodekutters.messages.RegisterCollector
 import com.kodekutters.messages.Watch
+import com.kodekutters.collector.FileLogger
 
 /**
  * Author: Ringo Wathelet
@@ -22,8 +23,10 @@ object TestApp {
     implicit val system = ActorSystem("TestApp")
 
     val collector = system.actorOf(Props(classOf[BasicCollector]))
+//    val logger = system.actorOf(Props(classOf[FileLogger], "testlogger.txt"))
     val linker = system.actorOf(Props(classOf[GPSdLinker], "localhost", 2947))
     linker ! RegisterCollector(collector)
+ //   linker ! RegisterCollector(logger)
     Thread.sleep(1000)
     linker ! Start
     Thread.sleep(1000)
