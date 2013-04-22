@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="spray-json_2.10-1.2.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/akka/spray/spray-json-2.10-1.2.3/spray-json_2.10-1.2.3.jar!/" />
+      <root url="jar://$USER_HOME$/akka/spray/parboiled/parboiled-core-1.1.4.jar!/" />
+      <root url="jar://$USER_HOME$/akka/spray/parboiled/parboiled-scala_2.10.0-RC3-1.1.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
