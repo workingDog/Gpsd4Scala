@@ -19,9 +19,9 @@ object Example1 {
     implicit val system = ActorSystem("Example1")
 
     // create a collector that will receive the decoded gps data
-    val collector = system.actorOf(Props(new BasicCollector()))
+    val collector = system.actorOf(Props(classOf[BasicCollector]))
     // create the client session actor
-    val linker = system.actorOf(Props(new GPSdLinker("localhost", 2947)))
+    val linker = system.actorOf(Props(classOf[GPSdLinker], "localhost", 2947))
     // register the collector
     linker ! RegisterCollector(collector)
     Thread.sleep(1000)

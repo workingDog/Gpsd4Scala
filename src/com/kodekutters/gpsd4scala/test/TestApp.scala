@@ -21,8 +21,8 @@ object TestApp {
   def test1 = {
     implicit val system = ActorSystem("TestApp")
 
-    val collector = system.actorOf(Props(new BasicCollector()))
-    val linker = system.actorOf(Props(new GPSdLinker("localhost", 2947)))
+    val collector = system.actorOf(Props(classOf[BasicCollector]))
+    val linker = system.actorOf(Props(classOf[GPSdLinker], "localhost", 2947))
     linker ! RegisterCollector(collector)
     Thread.sleep(1000)
     linker ! Start

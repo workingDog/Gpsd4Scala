@@ -24,7 +24,7 @@ class GPSdLinker(address: java.net.InetSocketAddress) extends Actor with ActorLo
   def this(server: String, port: Int = 2947) = this(new InetSocketAddress(server, port))
 
   // the client that connects to the gpsd server
-  val gpsdClient = context.actorOf(Props(new GpsdClient(address, collectorList)))
+  val gpsdClient = context.actorOf(Props(classOf[GpsdClient], address, collectorList))
 
   // supervise the client here ... TODO
   override val supervisorStrategy = OneForOneStrategy(maxNrOfRetries = 10, withinTimeRange = 1 minute) {
