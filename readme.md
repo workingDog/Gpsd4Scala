@@ -35,16 +35,15 @@ First download and install gpsd from http://www.catb.org/gpsd/.
 Launch gpsd (for my tests, I typed: gpsd /dev/ttyUSB0 at the prompt).
 
 With the gpsd server running in the background the Gpsd4Scala client library can
-be used to connect and retrieve GPS data from the server (see the example code).
+be used to connect and retrieve GPS data from the server on port 2947 (see the examples).
 
 # Dependencies
 
 Gpsd4Scala makes use of the JSON library spray-json from the [Spray](http://spray.io/) open source toolkit.
 The source code and explanations for spray-json can be found [here](https://github.com/spray/spray-json).
-For convenience, jar files including spray-json own associated dependency on [parboiled](https://github.com/sirthias/parboiled/wiki)
+For convenience, jar files including spray-json associated dependency on [parboiled](https://github.com/sirthias/parboiled/wiki)
 are included here in the lib directory.
-Gpsd4Scala also uses [Akka](http://akka.io/) with
-[Akka source code](https://github.com/akka/akka.github.com).
+Gpsd4Scala also uses [Akka](http://akka.io/).
 
 Currently (April 2013) Gpsd4Scala is based on connecting to gpsd-3.8, spray-json-2.10-1.2.3,
 using scala 2.10.1, Akka 2.2-M2 and I'm using IntelliJ IDEA 12.
@@ -65,7 +64,7 @@ Typically the following can be setup:
     Thread.sleep(1000)
 
 The collector is where the data arrives, this is where you do something with it.
-Here is the typical structure of a collector showing the data arriving with the Collector(obj) message:
+Here is the typical structure of a collector actor showing the data arriving with the Collector(obj) message:
 
     class BasicCollector extends Actor with Collector {
       def receive = {
