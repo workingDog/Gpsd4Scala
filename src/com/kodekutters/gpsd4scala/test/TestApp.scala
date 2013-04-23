@@ -33,7 +33,7 @@ object TestApp {
     Thread.sleep(1000)
     linker ! Start
     Thread.sleep(1000)
-    linker ! Watch(true, true)
+    linker ! Watch
     Thread.sleep(1000)
     linker ! CloseCollectors
 
