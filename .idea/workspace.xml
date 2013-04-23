@@ -7,9 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f37a7445-8cf0-435e-92d3-e56f7d3552fc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Gpsd4Scala-23-04-2013.jar" afterPath="$PROJECT_DIR$/bin/Gpsd4Scala-23-04-2013.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/GpsdClient.scala" afterPath="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/GpsdClient.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/test/TestApp.scala" afterPath="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/test/TestApp.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/examples/Example1.scala" afterPath="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/examples/Example1.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Gpsd4Scala.iws" />
@@ -31,7 +29,7 @@
     <file path="/FileLogger.scala" changelist="f37a7445-8cf0-435e-92d3-e56f7d3552fc" time="1366632243859" ignored="false" />
     <file path="/Example1.scala" changelist="f37a7445-8cf0-435e-92d3-e56f7d3552fc" time="1366631928585" ignored="false" />
     <file path="/license.txt" changelist="f37a7445-8cf0-435e-92d3-e56f7d3552fc" time="1366589388060" ignored="false" />
-    <file path="/Dummy.txt" changelist="f37a7445-8cf0-435e-92d3-e56f7d3552fc" time="1366757313828" ignored="false" />
+    <file path="/Dummy.txt" changelist="f37a7445-8cf0-435e-92d3-e56f7d3552fc" time="1366759599992" ignored="false" />
     <file path="/GoogleEarthCollector.scala" changelist="f37a7445-8cf0-435e-92d3-e56f7d3552fc" time="1366723238953" ignored="false" />
     <file path="/JSON.scala" changelist="f37a7445-8cf0-435e-92d3-e56f7d3552fc" time="1366684439005" ignored="false" />
     <file path="$USER_HOME$/scalaGPS/src/com/kodekutters/core/ServerManagement.scala" changelist="f37a7445-8cf0-435e-92d3-e56f7d3552fc" time="1366686449922" ignored="false" />
@@ -106,7 +104,7 @@
       <file leaf-file-name="TestApp.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/test/TestApp.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="19" selection-start="967" selection-end="967" vertical-scroll-proportion="0.0">
+            <state line="39" column="4" selection-start="1017" selection-end="1034" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -121,13 +119,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GpsdClient.scala" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="GpsdClient.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/GpsdClient.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="11" selection-start="892" selection-end="892" vertical-scroll-proportion="0.21782178">
+            <state line="66" column="32" selection-start="1911" selection-end="1911" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#41#60#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Example1.scala" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/examples/Example1.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="0" selection-start="1010" selection-end="1010" vertical-scroll-proportion="0.70555556">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -165,12 +172,12 @@
         <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/ExtraProductFormats.scala" />
         <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/collector/ViewerCollector.scala" />
         <option value="$USER_HOME$/scalaGPS/gpsd/howtogpsd.txt" />
-        <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/examples/Example1.scala" />
         <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/collector/GoogleEarthCollector.scala" />
         <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/GpsdClient.scala" />
         <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/messages/package.scala" />
         <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/test/TestApp.scala" />
+        <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/examples/Example1.scala" />
       </list>
     </option>
   </component>
@@ -703,7 +710,11 @@
       <created>1366757320617</created>
       <updated>1366757320617</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="initial commit">
+      <created>1366759611736</created>
+      <updated>1366759611736</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -833,11 +844,6 @@
         <state line="10" column="103" selection-start="448" selection-end="448" vertical-scroll-proportion="0.23554604" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/examples/Example1.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="18" selection-start="1009" selection-end="1009" vertical-scroll-proportion="0.6747624" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/collector/BasicCollector.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="46" selection-start="395" selection-end="395" vertical-scroll-proportion="0.18585005" />
@@ -860,13 +866,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/test/TestApp.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="19" selection-start="967" selection-end="967" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/GPSdLinker.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="33" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0">
@@ -883,10 +882,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/GpsdClient.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="11" selection-start="892" selection-end="892" vertical-scroll-proportion="0.21782178">
+        <state line="66" column="32" selection-start="1911" selection-end="1911" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#41#60#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/test/TestApp.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="4" selection-start="1017" selection-end="1034" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/examples/Example1.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="0" selection-start="1010" selection-end="1010" vertical-scroll-proportion="0.70555556">
+          <folding />
         </state>
       </provider>
     </entry>
