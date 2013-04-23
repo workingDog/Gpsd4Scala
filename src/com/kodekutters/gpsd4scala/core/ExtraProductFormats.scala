@@ -2,7 +2,7 @@ package com.kodekutters.gpsd4scala.core
 
 import spray.json._
 
-// this all thing should be removed TODO
+// all this will be removed when the new spray-json is released ..... TODO
 
 /**
  * Author: Ringo Wathelet
