@@ -30,13 +30,11 @@ object GoogleEarthCollector {
 
 class GoogleEarthCollector(val testFile: String) extends Actor with Collector with ActorLogging {
 
-  // the network link file name
-  val netLinkFile = "NetworkLink_" + testFile
-
-  // create the network link file
+  // create a kml network link
   val kml = new Kml(new NetworkLink("TestLink", new Link(testFile, OnInterval, 2)))
+
   // print the network link file
-  new KmlPrintWriter(netLinkFile).write(Option(kml), new PrettyPrinter(80, 3))
+  new KmlPrintWriter("NetworkLink_" + testFile).write(Option(kml), new PrettyPrinter(80, 3))
 
   def receive = {
     case Collect(info) => collect(info)
