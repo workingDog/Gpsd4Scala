@@ -73,6 +73,8 @@ Other commands can also be sent to the gpsd daemon such as:
 Note, to give the linker time to setup the connection and process the commands, it is
 advisable to wait for a bit.
 
+# How to collect the data
+
 The collector is where the data arrives, this is where you do something with it.
 Here is the typical structure of a collector actor showing the data arriving with the Collector(obj) message:
 
@@ -91,11 +93,12 @@ Here is the typical structure of a collector actor showing the data arriving wit
       }
     }
 
-There are a few example collectors in the collector directory. The FileLogger simply
-records all data to a text file. Note that this collector needs to have the CloseCollectors
+The collector directory contains a few example collectors.
+
+  - The FileLogger records all data to a text file. Note that this collector needs to have the CloseCollectors
 message sent to it (via the linker) to close the file.
 
-The GoogleEarthCollector example shows the location in Google Earth as a placemark.
+  - The GoogleEarthCollector example shows the location in Google Earth as a placemark.
 Note this collector depends on [scalakml](https://github.com/workingDog/scalakml) and
 [scalaxal](https://github.com/workingDog/scalaxal) libraries. These two libraries are included
 here in the lib directory.
