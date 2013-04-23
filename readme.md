@@ -86,7 +86,6 @@ Here is the typical structure of a collector actor showing the data arriving wit
           case x: TPVObject => println("TPVObject: " + obj.toString())
           case x: VersionObject => println("VersionObject: " + obj.toString())
           case x: DeviceObject => println("DeviceObject: " + obj.toString())
-          case x: WatchObject => println("WatchObject: " + obj.toString())
           case _ => println("not recognised object: " + obj.toString())
         }
       }
