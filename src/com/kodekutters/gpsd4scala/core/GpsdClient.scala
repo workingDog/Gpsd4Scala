@@ -6,7 +6,6 @@ import com.kodekutters.messages._
 import java.net.InetSocketAddress
 import akka.util.ByteString
 import scala.collection.mutable
-import com.kodekutters.gpsd4scala.types.WatchObject
 import spray.json._
 
 /**
@@ -35,8 +34,8 @@ class GpsdClient(val address: InetSocketAddress, val collectorList: mutable.Hash
     case Start => IO(Tcp) ! Connect(address)
 
     case Stop =>
-      sender ! Tcp.Close
-      self ! Close
+      sender ! Close
+      context stop self
 
     case CommandFailed(_: Connect) => context stop self
 
@@ -66,7 +65,9 @@ class GpsdClient(val address: InetSocketAddress, val collectorList: mutable.Hash
 
         case CommandFailed(w: Write) => log.info("\nin GpsdClient CommandFailed ", w)
 
-        case Close => connection ! Close
+        case Close | Stop =>
+          connection ! Close
+          context stop self
 
         case data: ByteString => connection ! Write(data)
 

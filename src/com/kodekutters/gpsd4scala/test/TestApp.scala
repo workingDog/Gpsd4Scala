@@ -4,9 +4,9 @@ import com.kodekutters.gpsd4scala.core.{GPSdLinker}
 import akka.actor.{ActorSystem, Props}
 import com.kodekutters.messages._
 import com.kodekutters.gpsd4scala.collector.BasicCollector
-import com.kodekutters.messages.RegisterCollector
-import com.kodekutters.messages.Watch
 import com.kodekutters.collector.FileLogger
+import akka.io.Tcp.Close
+import com.kodekutters.messages.RegisterCollector
 
 
 /**
@@ -34,9 +34,10 @@ object TestApp {
     linker ! Start
     Thread.sleep(1000)
     linker ! Watch
+    Thread.sleep(20000)
+    linker ! Stop
     Thread.sleep(1000)
-    linker ! CloseCollectors
-
+    system.shutdown()
   }
 
 
