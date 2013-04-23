@@ -32,7 +32,7 @@ object Example1 {
     linker ! Start
     Thread.sleep(1000)
     // example of sending a command to the gpsd server
-    linker ! Poll
+    linker ! Watch
     Thread.sleep(1000)
     // close any collectors that need closing (e.g. file loggers)
     linker ! CloseCollectors

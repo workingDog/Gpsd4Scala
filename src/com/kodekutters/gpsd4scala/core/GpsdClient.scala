@@ -52,11 +52,7 @@ class GpsdClient(val address: InetSocketAddress, val collectorList: mutable.Hash
           if (decodedList.isDefined)
             collectorList.foreach(collector => decodedList.get.foreach(dataObj => collector ! Collect(dataObj)))
 
-        case Watch(enable, json, nmea, raw, scaled, timing, device, remote) =>
-          val watchObj = WatchObject(Option(enable), Option(json), Option(nmea), Option(raw), Option(scaled), Option(timing), Option(device), Option(remote))
-          self ! WatchThis(watchObj)
-
-        case WatchThis(watchObj) => connection ! Write(ByteString("?WATCH=" + watchObj.toJson))
+        case Watch => connection ! Write(ByteString("?WATCH;"))
 
         case Poll => connection ! Write(ByteString("?POLL;"))
 
