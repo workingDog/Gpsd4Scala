@@ -38,8 +38,6 @@ class GpsdClient(val address: InetSocketAddress, val collectorList: mutable.Hash
       sender ! Tcp.Close
       self ! Close
 
-    case Pause => println("in GpsdClient Pause")
-
     case CommandFailed(_: Connect) => context stop self
 
     case c @ Connected(remote, local) =>
@@ -52,8 +50,6 @@ class GpsdClient(val address: InetSocketAddress, val collectorList: mutable.Hash
           if (decodedList.isDefined)
             collectorList.foreach(collector => decodedList.get.foreach(dataObj => collector ! Collect(dataObj)))
 
-        case Watch(watchObj) => connection ! Write(ByteString("?WATCH=" + watchObj.toJson))
-
         case Watch => connection ! Write(ByteString("?WATCH;"))
 
         case Poll => connection ! Write(ByteString("?POLL;"))
@@ -64,7 +60,9 @@ class GpsdClient(val address: InetSocketAddress, val collectorList: mutable.Hash
 
         case Device => connection ! Write(ByteString("?DEVICE;"))
 
-        case Device(dev) => connection ! Write(ByteString("?DEVICE=" + dev.toJson))
+        case Device(devObj) => connection ! Write(ByteString("?DEVICE=" + devObj.toJson))
+
+        case Watch(watchObj) => connection ! Write(ByteString("?WATCH=" + watchObj.toJson))
 
         case CommandFailed(w: Write) => log.info("\nin GpsdClient CommandFailed ", w)
 
