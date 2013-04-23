@@ -34,11 +34,9 @@ package object messages {
 
   case object Version extends Event
 
-  case object Watch extends Event
+//  case object NoConnection extends Event
 
   case object CloseCollectors extends Event
-
-  //  case object NoConnection extends Event
 
   case class CloseCollector(collector: ActorRef) extends Event
 
@@ -47,6 +45,12 @@ package object messages {
   case class DeRegisterCollector(collector: ActorRef) extends Event
 
   case class Collect(message: TypeObject, others: Any*) extends Event
+
+  case class WatchThis(watchObj: WatchObject) extends Event
+
+  case class Watch(enable: Boolean = true, json: Boolean = false, nmea: Boolean = false, raw: Int = 1,
+                   scaled: Boolean = false, timing: Boolean = false,
+                   device: String = "", remote: String = "") extends Event
 
   //---------------------------------------------------------------
   //--------------ComplexEvent------------------------------------

@@ -67,7 +67,7 @@ Other commands can also be sent to the gpsd daemon such as:
 
   - linker ! Version
   - linker ! Poll
-  - linker ! Watch
+  - linker ! Watch(true, true)
 
 Note, to give the linker time to setup the connection and process the commands, it is
 advisable to wait for a bit.
