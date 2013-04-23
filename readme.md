@@ -21,7 +21,7 @@ a C++ wrapper class, and a Python module that developers of gpsd-aware applicati
 can use to encapsulate all communication with gpsd. Third-party client bindings
 for Java and Perl also exist."
 
-gpsd data is provided as [JSON](http://www.json.org/) objects that are decoded by Gpsd4Scala
+gpsd provides data as [JSON](http://www.json.org/) objects that are decoded by Gpsd4Scala
 into equivalent scala objects. See also [gpsd_json](http://catb.org/gpsd/gpsd_json.html) for
 the meaning of the JSON objects returned by gpsd.
 
@@ -75,7 +75,7 @@ advisable to wait for a bit.
 # How to collect the data
 
 The collector is where the data arrives, this is where you do something with it.
-Here is the typical structure of a collector actor showing the data arriving with the Collector(obj) message:
+Here is the typical structure of a collector actor showing the data arriving with the Collect(obj) message:
 
     class BasicCollector extends Actor with Collector {
 
@@ -91,12 +91,12 @@ Here is the typical structure of a collector actor showing the data arriving wit
       }
     }
 
-The collector directory contains a few example collectors.
+Other example collectors can be found in the collector directory such as:
 
-  - The FileLogger records all data to a text file. Note that this collector needs to have the CloseCollectors
+  - The FileLogger records data to a text file. Note that this collector needs to have the CloseCollectors
 message sent to it (via the linker) to close the file.
 
-  - The GoogleEarthCollector example shows the location in Google Earth as a placemark.
+  - The GoogleEarthCollector example shows the GPS location in Google Earth as a placemark.
 Note this collector depends on [scalakml](https://github.com/workingDog/scalakml) and
 [scalaxal](https://github.com/workingDog/scalaxal) libraries. These two libraries are included
 here in the lib directory.
