@@ -1,5 +1,4 @@
-
-# Overview
+# Gpsd4Scala Overview
 
 Gpsd4Scala is a Scala/Akka client for connecting to the [gpsd](http://www.catb.org/gpsd/) daemon.
 
@@ -25,28 +24,12 @@ gpsd provides data as [JSON](http://www.json.org/) objects that are decoded by G
 into equivalent scala objects. See also [gpsd_json](http://catb.org/gpsd/gpsd_json.html) for
 the meaning of the JSON objects returned by gpsd.
 
-
 # How to setup
 
-First download and install gpsd from http://www.catb.org/gpsd/.
-Launch gpsd (for my tests, I typed: gpsd /dev/ttyUSB0 at the prompt).
+First download and install gpsd from http://www.catb.org/gpsd/. Launch gpsd according to the instructions.
 
 With the gpsd server running in the background the Gpsd4Scala client library can
 be used to connect and retrieve GPS data from the server on port 2947 (see the examples).
-
-# Dependencies
-
-Gpsd4Scala makes use of the JSON library spray-json from the [Spray](http://spray.io/) open source toolkit.
-The source code and explanations for spray-json can be found [here](https://github.com/spray/spray-json).
-For convenience, jar files including spray-json associated dependency on [parboiled](https://github.com/sirthias/parboiled/wiki)
-are included here in the lib directory.
-Gpsd4Scala also uses [Akka](http://akka.io/) and of course [Scala](http://www.scala-lang.org/).
-
-Note spray-json [license](http://spray.io/project-info/license/), Akka [license](https://github.com/akka/akka/blob/master/LICENSE)
- and parboiled is under Apache License 2.0 license.
-
-Currently (April 2013) Gpsd4Scala is based on connecting to gpsd-3.8, spray-json-2.10-1.2.3,
-using scala 2.10.1, Akka 2.2-M3 and I'm using IntelliJ IDEA 12.
 
 # How to use
 
@@ -104,6 +87,19 @@ Note this collector depends on [scalakml](https://github.com/workingDog/scalakml
 [scalaxal](https://github.com/workingDog/scalaxal) libraries. These two libraries are included
 here in the lib directory.
 
+# Dependencies
+
+Gpsd4Scala makes use of the JSON library spray-json from the [Spray](http://spray.io/) open source toolkit.
+The source code and explanations for spray-json can be found [here](https://github.com/spray/spray-json).
+For convenience, jar files including spray-json associated dependency on [parboiled](https://github.com/sirthias/parboiled/wiki)
+are included here in the lib directory.
+Gpsd4Scala also uses [Akka](http://akka.io/) and of course [Scala](http://www.scala-lang.org/).
+
+Note spray-json [license](http://spray.io/project-info/license/), Akka [license](https://github.com/akka/akka/blob/master/LICENSE)
+ and parboiled is under Apache License 2.0 license.
+
+Currently (April 2013) Gpsd4Scala is based on connecting to gpsd-3.8, spray-json-2.10-1.2.3,
+using scala 2.10.1, Akka 2.2-M3 and I'm using IntelliJ IDEA 12.
 
 # Status
 
