@@ -3,7 +3,6 @@ package com.kodekutters.gpsd4scala.core
 import scala.Some
 import com.kodekutters.gpsd4scala.types._
 import spray.json._
-import scala.util.matching.Regex
 
 /**
  * Author: Ringo Wathelet
