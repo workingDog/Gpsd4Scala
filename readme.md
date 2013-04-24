@@ -62,12 +62,15 @@ Typically the following can be setup:
     // start the client to connect to the gpsd server
     linker ! Start
     Thread.sleep(1000)
+    linker ! Watch
 
 Other commands can also be sent to the gpsd daemon such as:
 
   - linker ! Version
   - linker ! Poll
-  - linker ! Watch
+  - linker ! Device
+  - linker ! Device(deviceObj)
+  - linker ! Watch(watchObj)
 
 Note, to give the linker time to setup the connection and process the commands, it is
 advisable to wait for a bit.

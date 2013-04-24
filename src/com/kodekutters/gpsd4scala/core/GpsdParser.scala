@@ -46,6 +46,9 @@ class GpsdParser {
 
   import GpsdJsonProtocol._
 
+  // "^\\$.*\\*..$" to detect if the data is NMEA
+
+
   /**
    * parse the input ByteString which may contain multiple json objects,
    * into a corresponding list of scala objects
