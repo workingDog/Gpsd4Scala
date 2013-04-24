@@ -3,7 +3,7 @@
 
 Gpsd4Scala is a Scala/Akka client for connecting to the [gpsd](http://www.catb.org/gpsd/) daemon.
 
-This scala project is to help developers in retrieving GPS data from
+This scala client library is to help developers in retrieving GPS data from
 GPS devices connected to a computer (e.g. Raspberry PI). This is done through the intermediate
 gpsd server. The scala client first connects to the gpsd service, then reads the GPS data
 from it and presents that data to the developer as scala objects.
@@ -89,7 +89,7 @@ Here is the typical structure of a collector actor showing the data arriving wit
           case x: TPVObject => println("TPVObject: " + obj.toString())
           case x: VersionObject => println("VersionObject: " + obj.toString())
           case x: DeviceObject => println("DeviceObject: " + obj.toString())
-          case _ => println("not recognised object: " + obj.toString())
+          case _ => println("other object: " + obj.toString())
         }
       }
     }
@@ -107,7 +107,6 @@ here in the lib directory.
 
 # Status
 
-Gpsd4Scala is still in development, is not yet ready for use. No testing has been done, as I do not
-have a GPS device.
+Gpsd4Scala is still in development. No testing has been done yet, as I do not have a GPS device.
 
 Only JSON format data is supported (default set in watch).
