@@ -34,7 +34,7 @@ object TestApp {
     linker ! Start
     Thread.sleep(1000)
     linker ! Watch
-    Thread.sleep(20000)
+    Thread.sleep(10000)
     linker ! Stop
     Thread.sleep(1000)
     system.shutdown()

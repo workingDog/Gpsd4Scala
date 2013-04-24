@@ -5,6 +5,7 @@ import java.net.InetSocketAddress
 import akka.actor.SupervisorStrategy.Restart
 import akka.actor.OneForOneStrategy
 import scala.concurrent.duration._
+import com.kodekutters.messages.ConnectionFailed
 
 /**
  * Author: Ringo Wathelet
@@ -31,7 +32,17 @@ class GPSdLinker(address: java.net.InetSocketAddress) extends Actor with ActorLo
     case _ => Restart
   }
 
-  // the messages are processed first in collectorManagement, then passed onto the client actor
-  def receive = collectorManagement orElse  { case x => gpsdClient ! x }
+  def receive = collectorManagement orElse linkerReceive
+
+  def linkerReceive: Receive = {
+    // from the client, typically when no connection could be established
+    case ConnectionFailed =>
+      log.info("\n......connection failed, probably because the gpsd daemon is not running")
+      // report to the parent that the connection failed
+      context.parent ! ConnectionFailed
+      context stop self
+
+    case x => gpsdClient ! x
+  }
 
 }

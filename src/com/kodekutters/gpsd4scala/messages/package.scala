@@ -38,7 +38,7 @@ package object messages {
 
   case object Device extends Event
 
-//  case object NoConnection extends Event
+  case object ConnectionFailed extends Event
 
   case object CloseCollectors extends Event
 

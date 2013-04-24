@@ -47,7 +47,7 @@ class GpsdParser {
   import GpsdJsonProtocol._
 
   /**
-   * parse the input ByteString which may contain multiple json objects
+   * parse the input ByteString which may contain multiple json objects,
    * into a corresponding list of scala objects
    *
    * @param data the input ByteString to parse, this is split on new line "\\r?\\n"

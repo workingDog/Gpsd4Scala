@@ -37,7 +37,10 @@ class GpsdClient(val address: InetSocketAddress, val collectorList: mutable.Hash
       sender ! Close
       context stop self
 
-    case CommandFailed(_: Connect) => context stop self
+    case CommandFailed(_: Connect) =>
+      // report to the parent that the connection failed
+      context.parent ! ConnectionFailed
+      context stop self
 
     case c @ Connected(remote, local) =>
       val connection = sender
