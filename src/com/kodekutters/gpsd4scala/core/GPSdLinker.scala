@@ -35,6 +35,7 @@ class GPSdLinker(address: java.net.InetSocketAddress) extends Actor with ActorLo
   def receive = collectorManagement orElse linkerReceive
 
   def linkerReceive: Receive = {
+
     // from the client, typically when no connection could be established
     case ConnectionFailed =>
       log.info("\n......connection failed, probably because the gpsd daemon is not running")
@@ -42,7 +43,8 @@ class GPSdLinker(address: java.net.InetSocketAddress) extends Actor with ActorLo
       context.parent ! ConnectionFailed
       context stop self
 
-    case x => gpsdClient ! x
+    // forward all other messages to the client
+    case x => gpsdClient forward x
   }
 
 }
