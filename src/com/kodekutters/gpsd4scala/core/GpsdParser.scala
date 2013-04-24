@@ -28,15 +28,15 @@ object GpsdJsonProtocol extends DefaultJsonProtocol with ExtraProductFormats {
   implicit val PPSObjectFormat = jsonFormat5(PPSObject)
   implicit val ErrorObjectFormat = jsonFormat1(ErrorObject)
 
-//  implicit val ALMANACObjectFormat = jsonFormat12(ALMANACObject)
-//  implicit val EPHEM1ObjectFormat = jsonFormat11(EPHEM1Object)
-//  implicit val EPHEM2ObjectFormat = jsonFormat11(EPHEM2Object)
-//  implicit val EPHEM3ObjectFormat = jsonFormat9(EPHEM3Object)
-//  implicit val ERDObjectFormat = jsonFormat2(ERDObject)
-//  implicit val HEALTHObjectFormat = jsonFormat3(HEALTHObject)
-//  implicit val HEALTH2ObjectFormat = jsonFormat3(HEALTH2Object)
-//  implicit val IONOObjectFormat = jsonFormat16(IONOObject)
-//  implicit val SUBFRAMEObjectFormat = jsonFormat15(SUBFRAMEObject)
+  //  implicit val ALMANACObjectFormat = jsonFormat12(ALMANACObject)
+  //  implicit val EPHEM1ObjectFormat = jsonFormat11(EPHEM1Object)
+  //  implicit val EPHEM2ObjectFormat = jsonFormat11(EPHEM2Object)
+  //  implicit val EPHEM3ObjectFormat = jsonFormat9(EPHEM3Object)
+  //  implicit val ERDObjectFormat = jsonFormat2(ERDObject)
+  //  implicit val HEALTHObjectFormat = jsonFormat3(HEALTHObject)
+  //  implicit val HEALTH2ObjectFormat = jsonFormat3(HEALTH2Object)
+  //  implicit val IONOObjectFormat = jsonFormat16(IONOObject)
+  //  implicit val SUBFRAMEObjectFormat = jsonFormat15(SUBFRAMEObject)
 }
 
 /**
@@ -103,9 +103,11 @@ class GpsdParser {
         //        case JsString("IONO") => Some(jsonObj.convertTo[IONOObject])
         //        case JsString("SUBFRAME") => Some(jsonObj.convertTo[SUBFRAMEObject])
 
-      case _ => None
+        case _ => None
+      }
+    } catch {
+      case _: Throwable => None
     }
   }
-}
 
 }
