@@ -76,7 +76,7 @@ class GpsdClient(val address: InetSocketAddress, val collectorList: mutable.Hash
 
         case _: ConnectionClosed => context stop self
 
-        case x => log.info("\nin GpsdClient message not recognised: " + x.toString)
+        case x => log.info("\nin GpsdClient message not processed: " + x.toString)
 
       }
 
