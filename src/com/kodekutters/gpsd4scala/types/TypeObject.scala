@@ -74,8 +74,9 @@ case class VersionObject(release: Option[String] = None, rev: Option[String] = N
                          proto_major: Option[Double] = None, proto_minor: Option[Double] = None,
                          remote: Option[String] = None) extends TypeObject
 
-case class WatchObject(enable: Option[Boolean] = None, json: Option[Boolean] = None,
-                       nmea: Option[Boolean] = None, raw: Option[Int] = None,
+// Note: currently only json format is supported, hence the default true
+case class WatchObject(enable: Option[Boolean] = Some(true), json: Option[Boolean] = Some(true),
+                       nmea: Option[Boolean] = Some(false), raw: Option[Int] = None,
                        scaled: Option[Boolean] = None, timing: Option[Boolean] = None,
                        device: Option[String] = None, remote: Option[String] = None) extends TypeObject
 

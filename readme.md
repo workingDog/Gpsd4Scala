@@ -107,4 +107,4 @@ here in the lib directory.
 Gpsd4Scala is still in development, is not yet ready for use. No testing has been done, as I do not
 have a GPS device.
 
-
+Only JSON format data is supported (default set in watch).
