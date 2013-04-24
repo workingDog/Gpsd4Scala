@@ -5,7 +5,7 @@ Gpsd4Scala is a Scala/Akka client for connecting to the [gpsd](http://www.catb.o
 
 This scala client library is to help developers in retrieving GPS data from
 GPS devices connected to a computer (e.g. Raspberry PI). This is done through the intermediate
-gpsd server. The scala client first connects to the gpsd service, then reads the GPS data
+[gpsd server](http://www.catb.org/gpsd/). The scala client first connects to the gpsd service, then reads the GPS data
 from it and presents that data to the developer as scala objects.
 
 From [gpsd](http://www.catb.org/gpsd/) home page:
