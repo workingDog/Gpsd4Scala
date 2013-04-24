@@ -48,9 +48,9 @@ package object messages {
 
   case class DeRegisterCollector(collector: ActorRef) extends Event
 
-  case class Collect(message: TypeObject, others: Any*) extends Event
+  case class Collect(infoObj: TypeObject, others: Any*) extends Event
 
-  case class Device(device: DeviceObject) extends Event
+  case class Device(deviceObj: DeviceObject) extends Event
 
   case class Watch(watchObj: WatchObject) extends Event
 
