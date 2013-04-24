@@ -3,6 +3,7 @@ package com.kodekutters.gpsd4scala.core
 import scala.Some
 import com.kodekutters.gpsd4scala.types._
 import spray.json._
+import scala.util.matching.Regex
 
 /**
  * Author: Ringo Wathelet
@@ -46,9 +47,6 @@ class GpsdParser {
 
   import GpsdJsonProtocol._
 
-  // "^\\$.*\\*..$" to detect if the data is NMEA
-
-
   /**
    * parse the input ByteString which may contain multiple json objects,
    * into a corresponding list of scala objects
@@ -61,7 +59,9 @@ class GpsdParser {
     try {
       // split the data string on a new line, in case it has multiple json objects
       val lines = data.utf8String.trim.split("\\r?\\n")
-      val results = lines collect { case line => parseOne(line.trim) }
+      val results = lines collect {
+        case line => parseOne(line.trim)
+      }
       Some(results.flatten.toList)
     } catch {
       case _: Throwable => None

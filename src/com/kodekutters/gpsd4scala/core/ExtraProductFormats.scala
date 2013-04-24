@@ -4,13 +4,11 @@ import spray.json._
 
 // all this will be removed when the new spray-json is released ..... TODO
 
+// reference: https://github.com/spray/spray-json
+
 /**
- * Author: Ringo Wathelet
- * Date: 20/04/13 
- * Version: 1
+ * this is for extending the JsonFormat of spray-json beyond 15, namely 16-19
  */
-
-
 trait ExtraProductFormats {
   this: ProductFormats =>
 
