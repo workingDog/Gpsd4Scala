@@ -48,12 +48,15 @@ class GoogleEarthCollector(val testFile: String) extends Actor with Collector wi
   def collect(info: TypeObject) {
     info match {
       case tpv: TPVObject =>
-        // must have at least some values for the lat lon
-        if (tpv.lon.isDefined && tpv.lat.isDefined) {
-          val alt = if (tpv.alt.isDefined) tpv.alt.get else 0.0
-          val kml = new Kml(new Placemark("test", new Point(RelativeToGround, tpv.lon.get, tpv.lat.get, alt)))
-          // write the placemark to the kml file
-          new KmlPrintWriter(testFile).write(Option(kml), new PrettyPrinter(80, 3))
+        // if have a 2d or 3d fix, proceed
+        if (tpv.mode.get > 1) {
+          // must have at least some values for the lat lon
+          if (tpv.lon.isDefined && tpv.lat.isDefined) {
+            val alt = if (tpv.alt.isDefined) tpv.alt.get else 0.0
+            val kml = new Kml(new Placemark("test", new Point(RelativeToGround, tpv.lon.get, tpv.lat.get, alt)))
+            // write the placemark to the kml file
+            new KmlPrintWriter(testFile).write(Option(kml), new PrettyPrinter(80, 3))
+          }
         }
     }
   }
