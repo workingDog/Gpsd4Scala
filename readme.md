@@ -105,4 +105,4 @@ using scala 2.10.1, Akka 2.2-M3 and I'm using IntelliJ IDEA 12.
 
 Gpsd4Scala has not been tested yet, as I do not have a GPS device.
 
-Note: only JSON format data is supported (default set in watch).
+Note: only GPS JSON format data is supported (default set in watch).
