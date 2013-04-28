@@ -7,7 +7,7 @@ import spray.json._
 // reference: https://github.com/spray/spray-json
 
 /**
- * this is for extending the JsonFormat of spray-json beyond 15, namely 16-19
+ * this extends the JsonFormat of spray-json beyond 15, namely 16-19
  */
 trait ExtraProductFormats {
   this: ProductFormats =>

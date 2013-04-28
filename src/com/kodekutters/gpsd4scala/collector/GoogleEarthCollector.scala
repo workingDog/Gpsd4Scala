@@ -19,7 +19,7 @@ import com.kodekutters.gpsd4scala.types.{TPVObject, TypeObject}
  * with a placemark at the GPS location.
  *
  * Launch Google Earth by double clicking on the NetworkLink file.
- * The locations in the kml file are poled by the NetworkLink every 2 seconds in this example.
+ * The location in the kml file is poled by the NetworkLink every 2 seconds in this example.
  *
  */
 object GoogleEarthCollector {
@@ -28,12 +28,17 @@ object GoogleEarthCollector {
 
 }
 
+/**
+ * An example collector showing the gps location in Google Earth
+ * @param testFile the kml file name containing the location,
+ *                 an associated NetworkLink file will also be created
+ */
 class GoogleEarthCollector(val testFile: String) extends Actor with Collector with ActorLogging {
 
   // create a kml network link
   val kml = new Kml(new NetworkLink("TestLink", new Link(testFile, OnInterval, 2)))
 
-  // print the network link file
+  // print the network link to file
   new KmlPrintWriter("NetworkLink_" + testFile).write(Option(kml), new PrettyPrinter(80, 3))
 
   def receive = {
@@ -45,7 +50,7 @@ class GoogleEarthCollector(val testFile: String) extends Actor with Collector wi
       case tpv: TPVObject =>
         // must have at least some values for the lat lon
         if (tpv.lon.isDefined && tpv.lat.isDefined) {
-          val alt = if(tpv.alt.isDefined) tpv.alt.get else 0.0
+          val alt = if (tpv.alt.isDefined) tpv.alt.get else 0.0
           val kml = new Kml(new Placemark("test", new Point(RelativeToGround, tpv.lon.get, tpv.lat.get, alt)))
           // write the placemark to the kml file
           new KmlPrintWriter(testFile).write(Option(kml), new PrettyPrinter(80, 3))

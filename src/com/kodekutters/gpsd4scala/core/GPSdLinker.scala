@@ -18,7 +18,7 @@ import com.kodekutters.messages.ConnectionFailed
  *
  * ref: http://www.catb.org/gpsd/
  *
- * @param address the IP address of the gpsd server, e.g. localhost:2947
+ * @param address the socket address of the gpsd server, e.g. host name: localhost and port: 2947
  */
 class GPSdLinker(address: java.net.InetSocketAddress) extends Actor with ActorLogging with CollectorManagement {
 

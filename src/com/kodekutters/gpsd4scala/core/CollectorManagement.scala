@@ -14,7 +14,7 @@ import com.kodekutters.messages.Collect
  */
 
 /**
- * keeper of the list of collectors, forward messages to the collectors
+ * keeper of the list of collectors, forwards messages to the collectors
  */
 trait CollectorManagement {
   this: Actor =>

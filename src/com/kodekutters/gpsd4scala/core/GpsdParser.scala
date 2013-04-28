@@ -58,9 +58,7 @@ class GpsdParser {
     try {
       // split the data string on a new line, in case it has multiple json objects
       val lines = data.utf8String.trim.split("\\r?\\n")
-      val results = lines collect {
-        case line => parseOne(line.trim)
-      }
+      val results = lines collect { case line => parseOne(line.trim) }
       Some(results.flatten.toList)
     } catch {
       case _: Throwable => None
