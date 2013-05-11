@@ -1,6 +1,6 @@
 # Gpsd4Scala Overview
 
-Gpsd4Scala is a Scala/Akka client for connecting to the [gpsd](http://www.catb.org/gpsd/) daemon.
+Gpsd4Scala is a Scala and Akka client for connecting to the [gpsd](http://www.catb.org/gpsd/) daemon.
 
 This scala client library is to help developers in retrieving GPS data from
 GPS devices connected to a computer (e.g. Raspberry PI). This is done through the intermediate
