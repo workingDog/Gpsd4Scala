@@ -227,7 +227,7 @@ trait ExtraProductFormats {
                                     productElement2Field[Q](q, p, 15,
                                       productElement2Field[R](r, p, 16,
                                         productElement2Field[S](s, p, 17,
-                                          productElement2Field[S](s, p, 18)))))))))))))))))))
+                                          productElement2Field[U](u, p, 18)))))))))))))))))))
     )
 
     def read(value: JsValue) = construct(
@@ -252,5 +252,6 @@ trait ExtraProductFormats {
       fromField[U](value, u)
     )
   }
+
 
 }
