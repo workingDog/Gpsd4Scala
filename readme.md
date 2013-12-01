@@ -98,8 +98,8 @@ Gpsd4Scala also uses [Akka](http://akka.io/) and of course [Scala](http://www.sc
 Note spray-json [license](http://spray.io/project-info/license/), Akka [license](https://github.com/akka/akka/blob/master/LICENSE)
  and parboiled is under Apache License 2.0 license.
 
-Currently Gpsd4Scala is based on connecting to gpsd-3.8, spray-json-2.10-1.2.3,
-using scala 2.10.3, Akka 2.2.3 and IntelliJ IDEA 13.
+Currently Gpsd4Scala is based on connecting to gpsd-3.8. 
+Using spray-json-2.10-1.2.3, scala 2.10.3, Akka 2.2.3 and IntelliJ IDEA 13.
 
 # Status
 
