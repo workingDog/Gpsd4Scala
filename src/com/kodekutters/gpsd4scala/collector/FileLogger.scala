@@ -1,6 +1,6 @@
 package com.kodekutters.collector
 
-import com.kodekutters.messages.{CloseCollectors, Collect}
+import com.kodekutters.gpsd4scala.messages.{CloseCollectors, Collect}
 import akka.actor.{ActorLogging, Actor}
 import java.io.File
 import com.kodekutters.gpsd4scala.collector.Collector

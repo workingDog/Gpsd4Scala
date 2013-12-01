@@ -2,10 +2,7 @@ package com.kodekutters.gpsd4scala.core
 
 import akka.actor.{ActorRef, Actor}
 import scala.collection.mutable
-import com.kodekutters.messages._
-import com.kodekutters.messages.RegisterCollector
-import com.kodekutters.messages.DeRegisterCollector
-import com.kodekutters.messages.Collect
+import com.kodekutters.gpsd4scala.messages._
 
 /**
  * Author: Ringo Wathelet

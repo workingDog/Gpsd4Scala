@@ -2,11 +2,12 @@ package com.kodekutters.gpsd4scala.core
 
 import akka.actor._
 import akka.io.{Tcp, IO}
-import com.kodekutters.messages._
+import com.kodekutters.gpsd4scala.messages._
 import java.net.InetSocketAddress
 import akka.util.ByteString
 import scala.collection.mutable
 import spray.json._
+
 
 /**
  * Author: Ringo Wathelet

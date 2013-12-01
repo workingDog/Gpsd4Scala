@@ -1,7 +1,6 @@
 package com.kodekutters.gpsd4scala.types
 
-import scala.Predef.String
-import scala._
+
 
 /**
  * Author: Ringo Wathelet
@@ -17,6 +16,20 @@ import scala._
 //------------------------------------------------------------------------
 
 trait TypeObject {}
+
+
+//case class ATTObject(tag: Option[String] = None, device: Option[String] = None, time: Option[String] = None,
+//                     heading: Option[Double] = None,
+//                     pitch: Option[Double] = None, pitch_st: Option[String] = None,
+//                     yaw: Option[Double] = None, yaw_st: Option[String] = None,
+//                     roll: Option[Double] = None, roll_st: Option[String] = None,
+//                     dip: Option[Double] = None, acc_len: Option[Double] = None,
+//                     acc_x: Option[Double] = None, acc_y: Option[Double] = None,
+//                     acc_z: Option[Double] = None, gyro_x: Option[Double] = None,
+//                     mag_len: Option[Double] = None, mag_x: Option[Double] = None,
+//                     mag_y: Option[Double] = None, mag_z: Option[Double] = None,
+//                     gyro_y: Option[Double] = None, depth: Option[Double] = None,
+//                     temp: Option[Double] = None) extends TypeObject
 
 // todo ...  missing mag because would make case class parameter limit > 22
 case class ATTObject(tag: Option[String] = None, device: Option[String] = None, time: Option[String] = None,

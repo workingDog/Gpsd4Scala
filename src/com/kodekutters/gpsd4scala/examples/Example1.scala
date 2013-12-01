@@ -1,10 +1,9 @@
 package com.kodekutters.gpsd4scala.examples
 
-import akka.actor.{Props, ActorSystem}
+import akka.actor.{ActorDSL, Props, ActorSystem}
 import com.kodekutters.gpsd4scala.collector.BasicCollector
 import com.kodekutters.gpsd4scala.core.GPSdLinker
-import com.kodekutters.messages._
-import com.kodekutters.messages.RegisterCollector
+import com.kodekutters.gpsd4scala.messages._
 
 /**
  * Author: Ringo Wathelet
@@ -24,7 +23,7 @@ object Example1 {
     // create a collector that will receive the decoded gps data
     val collector = system.actorOf(Props(classOf[BasicCollector]))
     // create the client session actor
-    val linker = system.actorOf(Props(classOf[GPSdLinker], "localhost", 2947))
+    val linker = ActorDSL.actor(new GPSdLinker("localhost", 2947))
     // register the collector
     linker ! RegisterCollector(collector)
     Thread.sleep(1000)

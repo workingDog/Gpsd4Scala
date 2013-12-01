@@ -5,7 +5,7 @@ import java.net.InetSocketAddress
 import akka.actor.SupervisorStrategy.Restart
 import akka.actor.OneForOneStrategy
 import scala.concurrent.duration._
-import com.kodekutters.messages.ConnectionFailed
+import com.kodekutters.gpsd4scala.messages.ConnectionFailed
 
 /**
  * Author: Ringo Wathelet
@@ -25,12 +25,12 @@ class GPSdLinker(address: java.net.InetSocketAddress) extends Actor with ActorLo
   def this(server: String, port: Int = 2947) = this(new InetSocketAddress(server, port))
 
   // the client that connects to the gpsd server
-  val gpsdClient = context.actorOf(Props(classOf[GpsdClient], address, collectorList))
+  val gpsdClient = ActorDSL.actor(new GpsdClient(address, collectorList))
 
   // supervise the client here ... TODO
-  override val supervisorStrategy = OneForOneStrategy(maxNrOfRetries = 10, withinTimeRange = 1 minute) {
-    case _ => Restart
-  }
+//  override val supervisorStrategy = OneForOneStrategy(maxNrOfRetries = 10, withinTimeRange = 1 minute) {
+//    case _ => Restart
+//  }
 
   def receive = collectorManagement orElse linkerReceive
 

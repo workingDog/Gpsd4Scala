@@ -1,4 +1,4 @@
-package com.kodekutters
+package com.kodekutters.gpsd4scala.messages
 
 import akka.actor.ActorRef
 import com.kodekutters.gpsd4scala.types.{DeviceObject, WatchObject, TypeObject}
@@ -12,7 +12,6 @@ import com.kodekutters.gpsd4scala.types.{DeviceObject, WatchObject, TypeObject}
 /**
  * the messages used by the actors
  */
-package object messages {
 
   // for zero or one argument events
   sealed trait Event
@@ -63,4 +62,3 @@ package object messages {
 
   case class DeRegisterCollectorForDevice(collector: ActorRef, deviceName: String) extends ComplexEvent
 
-}

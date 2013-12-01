@@ -2,10 +2,7 @@ package com.kodekutters.gpsd4scala.collector
 
 import akka.actor.Actor
 import com.kodekutters.gpsd4scala.types._
-import com.kodekutters.gpsd4scala.types.DevicesObject
-import com.kodekutters.gpsd4scala.types.GSTObject
-import com.kodekutters.messages.{CloseCollectors, Collect}
-import com.kodekutters.gpsd4scala.types.DeviceObject
+import com.kodekutters.gpsd4scala.messages.{CloseCollectors, Collect}
 
 /**
  * Author: Ringo Wathelet
