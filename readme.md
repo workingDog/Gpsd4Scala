@@ -99,7 +99,7 @@ Note spray-json [license](http://spray.io/project-info/license/), Akka [license]
  and parboiled is under Apache License 2.0 license.
 
 Currently Gpsd4Scala is based on connecting to gpsd-3.8, spray-json-2.10-1.2.3,
-using scala 2.10.3, Akka 2.2.3 and I'm using IntelliJ IDEA 13.
+using scala 2.10.3, Akka 2.2.3 and IntelliJ IDEA 13.
 
 # Status
 
