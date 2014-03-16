@@ -30,15 +30,15 @@ class GPSdLinker(address: java.net.InetSocketAddress) extends Actor with ActorLo
   implicit val timeout = Timeout(5 seconds)
 
   // the client that connects to the gpsd server
-  val gpsdClient = context.actorOf(Props(new GpsdClient(address, collectorList)))
+  val gpsdClient = context.actorOf(GpsdClient.props(address, collectorList), "client")
 
   // supervise the client here ... TODO
-//  override val supervisorStrategy = OneForOneStrategy(maxNrOfRetries = 10, withinTimeRange = 1 minute) {
-//    case _ => {
-//      log.info("\nin GPSdLinker supervisorStrategy Restart")
-//      Restart
-//    }
-//  }
+  //  override val supervisorStrategy = OneForOneStrategy(maxNrOfRetries = 10, withinTimeRange = 1 minute) {
+  //    case _ => {
+  //      log.info("\nin GPSdLinker supervisorStrategy Restart")
+  //      Restart
+  //    }
+  //  }
 
   // manage the collectors, then the linker receive
   def receive = manageCollectors orElse linkerReceive
@@ -55,4 +55,10 @@ class GPSdLinker(address: java.net.InetSocketAddress) extends Actor with ActorLo
     // forward all other commands to the client
     case cmd => gpsdClient forward cmd
   }
+}
+
+object GPSdLinker {
+  def props(address: java.net.InetSocketAddress): Props = Props(new GPSdLinker(address))
+
+  def props(server: String, port: Int = 2947): Props = Props(new GPSdLinker(server, port))
 }

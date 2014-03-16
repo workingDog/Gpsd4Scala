@@ -5,7 +5,7 @@ import com.kodekutters.gpsd4scala.types._
 import com.kodekutters.gpsd4scala.types.DevicesObject
 import com.kodekutters.gpsd4scala.types.GSTObject
 import com.kodekutters.gpsd4scala.types.DeviceObject
-import com.kodekutters.gpsd4scala.messages.{CloseAll, Collect}
+import com.kodekutters.gpsd4scala.messages.{CloseCollector, Close, CloseAll, Collect}
 
 /**
  * Author: Ringo Wathelet
@@ -21,7 +21,7 @@ class BasicCollector extends Actor with Collector with ActorLogging {
 
   def receive = {
     case Collect(obj) => collect(obj)
-    case CloseAll => log.info("BasicCollector CloseAll Collectors")
+    case CloseCollector => log.info("BasicCollector Close this Collector")
   }
 
   def collect(obj: TypeObject) {

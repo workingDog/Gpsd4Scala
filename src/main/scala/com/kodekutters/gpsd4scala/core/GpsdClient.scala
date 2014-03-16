@@ -15,6 +15,7 @@ import play.api.libs.json.Json
  * Version: 1
  */
 
+
 /**
  * the client actor that connects to the gpsd daemon.
  *
@@ -42,7 +43,7 @@ class GpsdClient(val address: InetSocketAddress, val collectorList: mutable.Hash
       context.parent ! ConnectionFailed
       context stop self
 
-    case c @ Connected(remote, local) =>
+    case c@Connected(remote, local) =>
       val connection = sender
       connection ! Register(self)
       context become {
@@ -87,4 +88,8 @@ class GpsdClient(val address: InetSocketAddress, val collectorList: mutable.Hash
 
   }
 
+}
+
+object GpsdClient {
+  def props(address: java.net.InetSocketAddress, collectorList: mutable.HashSet[ActorRef]): Props = Props(new GpsdClient(address, collectorList))
 }
