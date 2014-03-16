@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="Gpsd4Scala">
-    <output-path>$PROJECT_DIR$/bin</output-path>
-    <root id="archive" name="Gpsd4Scala.jar">
-      <element id="module-output" name="Gpsd4Scala" />
-    </root>
-  </artifact>
-</component>
