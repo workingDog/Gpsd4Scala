@@ -47,8 +47,9 @@ class GpsdClient(val address: InetSocketAddress, val collectorList: mutable.Hash
       connection ! Register(self)
       context become {
 
+        // receiving data from the gpsd server
         case Received(data) =>
-          // decode the data into a list of TypeObjects
+          // decode the data into a list of TypeObject
           val typeObjectList = parser.parse(data)
           // send all TypeObjects to the collectors
           if (typeObjectList.isDefined)

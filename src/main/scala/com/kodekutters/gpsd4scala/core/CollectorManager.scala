@@ -14,7 +14,9 @@ import com.kodekutters.gpsd4scala.messages.DeRegister
  */
 
 /**
- * keeper of the list of collectors, forwards all messages to the collectors
+ * keeper of the list of collectors,
+ * register and de-register collectors, and
+ * forward all other messages to the collectors.
  */
 trait CollectorManager {
   this: Actor =>

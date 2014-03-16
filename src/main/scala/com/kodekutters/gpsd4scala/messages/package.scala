@@ -10,12 +10,8 @@ import com.kodekutters.gpsd4scala.types.{DeviceObject, WatchObject, TypeObject}
  */
 
 /**
- * the messages used by the actors
+ * the messages that can be used by the actors
  */
-
-//-------------------------------------------------------------
-//--------------Event------------------------------------------
-//-------------------------------------------------------------
 
 case object Start
 

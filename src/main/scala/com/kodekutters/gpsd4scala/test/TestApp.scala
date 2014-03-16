@@ -3,7 +3,7 @@ package com.kodekutters.gpsd4scala.test
 import com.kodekutters.gpsd4scala.core.{GPSdLinker}
 import akka.actor.{Props, ActorDSL, ActorSystem}
 import com.kodekutters.gpsd4scala.collector.BasicCollector
-import com.kodekutters.gpsd4scala.messages.{Stop, Watch, Start, Register}
+import com.kodekutters.gpsd4scala.messages.{Watch, Start, Register}
 
 /**
  * Author: Ringo Wathelet

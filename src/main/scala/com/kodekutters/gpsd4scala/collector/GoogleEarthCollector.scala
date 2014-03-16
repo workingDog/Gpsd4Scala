@@ -15,10 +15,12 @@ import com.kodekutters.gpsd4scala.messages.Collect
  */
 
 /**
+ * another example collector.
+ *
  * collect TPV location messages, create a NetworkLink file and a kml file
  * with a placemark at the GPS location.
  *
- * Launch Google Earth by double clicking on the NetworkLink file.
+ * Launch Google Earth by double clicking on the created NetworkLink file.
  * The location in the kml file is poled by the NetworkLink every 2 seconds in this example.
  *
  */

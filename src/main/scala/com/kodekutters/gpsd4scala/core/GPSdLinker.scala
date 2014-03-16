@@ -21,8 +21,6 @@ import com.kodekutters.gpsd4scala.messages.ConnectionFailed
 /**
  * main entry point to link to the gpsd server
  *
- * ref: http://www.catb.org/gpsd/
- *
  * @param address the IP address of the gpsd server, e.g. localhost:2947
  */
 class GPSdLinker(address: java.net.InetSocketAddress) extends Actor with ActorLogging with CollectorManager {

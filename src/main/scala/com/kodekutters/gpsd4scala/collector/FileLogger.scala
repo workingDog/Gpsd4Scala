@@ -6,7 +6,6 @@ import com.kodekutters.gpsd4scala.collector.Collector
 import com.kodekutters.gpsd4scala.types.TypeObject
 import com.kodekutters.gpsd4scala.messages.{CloseCollector, CloseAll, Collect}
 
-
 /**
  * Author: Ringo Wathelet
  * Date: 2/04/13 
