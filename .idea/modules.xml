@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Gpsd4Scala.iml" filepath="$PROJECT_DIR$/Gpsd4Scala.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gpsd4scala.iml" filepath="$PROJECT_DIR$/.idea/modules/gpsd4scala.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gpsd4scala-build.iml" filepath="$PROJECT_DIR$/.idea/modules/gpsd4scala-build.iml" />
     </modules>
   </component>
 </project>
