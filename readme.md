@@ -65,6 +65,8 @@ Other commands can also be sent to the gpsd daemon such as:
 Note, to give the linker time to setup the connection and process the commands, it is
 advisable to wait for a second or two.
 
+In your application, simply include the gpsd4scala jar file from the [target directory](https://github.com/workingDog/Gpsd4Scala/tree/master/target/scala-2.10)
+
 # How to collect the data
 
 The collector is where the data arrives, this is where you do something with the data received from the gpsd.
@@ -101,14 +103,13 @@ here in the lib directory.
 
 # Dependencies
 
-Gpsd4Scala makes use of the JSON library [Play-json](http://www.playframework.com/documentation/2.2.x/ScalaJson).
-Gpsd4Scala also uses [Akka](http://akka.io/).
+Gpsd4Scala makes use of the [Play-json library](http://www.playframework.com/documentation/2.2.x/ScalaJson),
+and [Akka](http://akka.io/).
 
-Currently Gpsd4Scala is based on connecting to gpsd-3.8. 
-Using play-json-2.2.2, scala 2.10.3, Akka 2.3.0 and IntelliJ IDEA 13.
+Currently Gpsd4Scala is based on connecting to gpsd-3.8,
+uses play-json-2.2.2, scala 2.10.3, Akka 2.3.0 and IntelliJ IDEA 13.
+The code can be compiled/packaged/run using sbt compile, sbt package and sbt run.
 
 # Status
 
 Gpsd4Scala has not been fully tested yet, as I do not have a GPS device.
-
-Note: only GPS JSON format data is supported (default set in watch).
