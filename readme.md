@@ -34,11 +34,11 @@ be used to connect and retrieve GPS data from the server on port 2947 (see the e
 # How to use
 
 Gpsd4Scala is a library, so it is up to you to create your own application.
-Here is an example application:
+Here is an example:
 
     object Example {
       def main(args: Array[String]) {
-       implicit val context = ActorSystem("Example1")
+       implicit val context = ActorSystem("Example")
        // create a collector that will receive the decoded gps data
        val collector = context.actorOf(Props(classOf[BasicCollector]))
        // create the client session actor
