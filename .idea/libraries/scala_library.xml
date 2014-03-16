@@ -1,7 +1,7 @@
 <component name="libraryTable">
-  <library name="scalakml">
+  <library name="scala-library">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/lib/scalakml.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../scala-latest/lib/scala-library.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

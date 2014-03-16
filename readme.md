@@ -29,23 +29,30 @@ the meaning of the JSON objects returned by gpsd.
 First download and install gpsd from http://www.catb.org/gpsd/. Launch gpsd according to the instructions.
 
 With the gpsd server running in the background the Gpsd4Scala client library can
-be used to connect and retrieve GPS data from the server on port 2947 (see the examples).
+be used to connect and retrieve GPS data from the server on port 2947 (see the example).
 
 # How to use
 
-Typically the following can be setup:
+Gpsd4Scala is a library, so it is up to you to create your own application.
+Here is an example application:
 
-    // create a collector that will receive the decoded gps data
-    val collector = system.actorOf(Props(classOf[BasicCollector]))
-    // create a client session to connect to gpsd
-    val linker = system.actorOf(Props(classOf[GPSdLinker], "localhost", 2947))
-    // register the collector
-    linker ! RegisterCollector(collector)
-    Thread.sleep(1000)
-    // start the client to connect to the gpsd server
-    linker ! Start
-    Thread.sleep(1000)
-    linker ! Watch
+    object Example {
+      def main(args: Array[String]) {
+        implicit val system = ActorSystem("Example1")
+        // create a collector that will receive the decoded gps data
+        val collector = system.actorOf(Props(classOf[BasicCollector]))
+        // create a client session to connect to gpsd
+        val linker = ActorDSL.actor(new GPSdLinker("localhost", 2947))
+        // register the collector
+        linker ! Register(collector)
+        Thread.sleep(1000)
+        // start the client to connect to the gpsd server
+        linker ! Start
+        Thread.sleep(1000)
+        // example of sending a command to the gpsd server
+        linker ! Watch
+      }
+    }
 
 Other commands can also be sent to the gpsd daemon such as:
 
@@ -56,11 +63,14 @@ Other commands can also be sent to the gpsd daemon such as:
   - linker ! Watch(watchObj)
 
 Note, to give the linker time to setup the connection and process the commands, it is
-advisable to wait for a bit.
+advisable to wait for a second or two.
 
 # How to collect the data
 
-The collector is where the data arrives, this is where you do something with it.
+The collector is where the data arrives, this is where you do something with the data received from the gpsd.
+In your application all you have to do is to create your own collector and register it with the linker,
+as shown in the example above.
+
 Here is the typical structure of a collector actor showing the data arriving with the Collect(obj) message:
 
     class BasicCollector extends Actor with Collector {
@@ -77,10 +87,12 @@ Here is the typical structure of a collector actor showing the data arriving wit
       }
     }
 
+where "TypeObject" such as TPVObject, DeviceObject etc... are the scala objects representing
+the core gpsd socket protocol as described [here](http://catb.org/gpsd/gpsd_json.html).
+
 Other example collectors can be found in the collector directory such as:
 
-  - The FileLogger records data to a text file. Note that this collector needs to have the CloseCollectors
-message sent to it (via the linker) to close the file.
+  - The FileLogger records data to a text file.
 
   - The GoogleEarthCollector example shows the GPS location in Google Earth as a placemark.
 Note this collector depends on [scalakml](https://github.com/workingDog/scalakml) and
@@ -89,20 +101,14 @@ here in the lib directory.
 
 # Dependencies
 
-Gpsd4Scala makes use of the JSON library spray-json from the [Spray](http://spray.io/) open source toolkit.
-The source code and explanations for spray-json can be found [here](https://github.com/spray/spray-json).
-For convenience, jar files including spray-json associated dependency on [parboiled](https://github.com/sirthias/parboiled/wiki)
-are included here in the lib directory.
-Gpsd4Scala also uses [Akka](http://akka.io/) and of course [Scala](http://www.scala-lang.org/).
-
-Note spray-json [license](http://spray.io/project-info/license/), Akka [license](https://github.com/akka/akka/blob/master/LICENSE)
- and parboiled is under Apache License 2.0 license.
+Gpsd4Scala makes use of the JSON library [Play-json](http://www.playframework.com/documentation/2.2.x/ScalaJson).
+Gpsd4Scala also uses [Akka](http://akka.io/).
 
 Currently Gpsd4Scala is based on connecting to gpsd-3.8. 
-Using spray-json-2.10-1.2.3, scala 2.10.3, Akka 2.2.3 and IntelliJ IDEA 13.
+Using play-json-2.2.2, scala 2.10.3, Akka 2.3.0 and IntelliJ IDEA 13.
 
 # Status
 
-Gpsd4Scala has not been tested yet, as I do not have a GPS device.
+Gpsd4Scala has not been fully tested yet, as I do not have a GPS device.
 
 Note: only GPS JSON format data is supported (default set in watch).

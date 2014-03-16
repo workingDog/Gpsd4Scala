@@ -4,9 +4,9 @@ import akka.actor.{ActorLogging, Actor}
 import scala.xml.PrettyPrinter
 import com.scalakml.io.KmlPrintWriter
 import com.scalakml.kml._
-import com.kodekutters.gpsd4scala.messages.Collect
 import com.kodekutters.gpsd4scala.collector.Collector
 import com.kodekutters.gpsd4scala.types.{TPVObject, TypeObject}
+import com.kodekutters.gpsd4scala.messages.Collect
 
 /**
  * Author: Ringo Wathelet
@@ -62,4 +62,3 @@ class GoogleEarthCollector(val testFile: String) extends Actor with Collector wi
   }
 
 }
-

@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="play-json_2.10">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../play/play-2.2.2/repository/local/com.typesafe.play/play-json_2.10/2.2.2/jars/play-json_2.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../play/play-2.2.2/repository/local/com.typesafe.play/play-iteratees_2.10/2.2.2/jars/play-iteratees_2.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../play/play-2.2.2/repository/local/com.fasterxml.jackson.core/jackson-annotations/2.2.2/jars/jackson-annotations.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../play/play-2.2.2/repository/local/com.fasterxml.jackson.core/jackson-core/2.2.2/jars/jackson-core.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../play/play-2.2.2/repository/local/com.fasterxml.jackson.core/jackson-databind/2.2.2/jars/jackson-databind.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../play/play-2.2.2/repository/local/com.typesafe.play/play-datacommons_2.10/2.2.2/jars/play-datacommons_2.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../play/play-2.2.2/repository/local/com.typesafe.play/play-functional_2.10/2.2.2/jars/play-functional_2.10.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

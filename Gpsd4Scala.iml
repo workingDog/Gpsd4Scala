@@ -4,7 +4,7 @@
     <facet type="scala" name="Scala">
       <configuration>
         <option name="compilerLibraryLevel" value="Global" />
-        <option name="compilerLibraryName" value="scala-2.10.3" />
+        <option name="compilerLibraryName" value="scala-2.10.4-RC4" />
       </configuration>
     </facet>
   </component>
@@ -15,11 +15,13 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="spray-json_2.10-1.2.3" level="project" />
-    <orderEntry type="library" name="scalaxal" level="project" />
+    <orderEntry type="library" name="akka_2.10-2.3.0" level="project" />
     <orderEntry type="library" name="scalakml" level="project" />
-    <orderEntry type="library" name="scala-2.10.3" level="project" />
-    <orderEntry type="library" name="akka" level="project" />
+    <orderEntry type="library" name="scalaxal" level="project" />
+    <orderEntry type="library" name="play-json_2.10" level="project" />
+    <orderEntry type="library" name="scala-library" level="project" />
+    <orderEntry type="library" name="json4s_2.10-3.2.7-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="joda-time-2.3-javadoc" level="project" />
   </component>
 </module>
 

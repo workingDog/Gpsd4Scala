@@ -2,11 +2,11 @@ package com.kodekutters.gpsd4scala.core
 
 import akka.actor._
 import akka.io.{Tcp, IO}
-import com.kodekutters.gpsd4scala.messages._
 import java.net.InetSocketAddress
 import akka.util.ByteString
 import scala.collection.mutable
-import spray.json._
+import com.kodekutters.gpsd4scala.messages._
+import play.api.libs.json.Json
 
 
 /**
@@ -25,9 +25,8 @@ class GpsdClient(val address: InetSocketAddress, val collectorList: mutable.Hash
 
   import Tcp._
   import context.system
-  import GpsdJsonProtocol._
 
-  // the parser to decode the messages from gpsd into corresponding scala objects
+  // the parser to decode the messages from gpsd into corresponding TypeObjects
   val parser = new GpsdParser()
 
   def receive = {
@@ -49,9 +48,11 @@ class GpsdClient(val address: InetSocketAddress, val collectorList: mutable.Hash
       context become {
 
         case Received(data) =>
-          val decodedList = parser.parse(data)
-          if (decodedList.isDefined)
-            collectorList.foreach(collector => decodedList.get.foreach(dataObj => collector ! Collect(dataObj)))
+          // decode the data into a list of TypeObjects
+          val typeObjectList = parser.parse(data)
+          // send all TypeObjects to the collectors
+          if (typeObjectList.isDefined)
+            collectorList.foreach(collector => typeObjectList.get.foreach(typeObj => collector ! Collect(typeObj)))
 
         case Watch => connection ! Write(ByteString("?WATCH;"))
 
@@ -63,11 +64,11 @@ class GpsdClient(val address: InetSocketAddress, val collectorList: mutable.Hash
 
         case Device => connection ! Write(ByteString("?DEVICE;"))
 
-        case Device(devObj) => connection ! Write(ByteString("?DEVICE=" + devObj.toJson))
+        case Device(devObj) => connection ! Write(ByteString("?DEVICE=" + Json.toJson(devObj)))
 
-        case Watch(watchObj) => connection ! Write(ByteString("?WATCH=" + watchObj.toJson))
+        case Watch(watchObj) => connection ! Write(ByteString("?WATCH=" + Json.toJson(watchObj)))
 
-        case CommandFailed(w: Write) => log.info("\nin GpsdClient CommandFailed ", w)
+        case CommandFailed(w: Write) => log.info("\nGpsdClient CommandFailed ", w)
 
         case Close | Stop =>
           connection ! Close
@@ -77,11 +78,11 @@ class GpsdClient(val address: InetSocketAddress, val collectorList: mutable.Hash
 
         case _: ConnectionClosed => context stop self
 
-        case x => log.info("\nin GpsdClient message not processed: " + x.toString)
+        case x => log.info("\nGpsdClient message not processed: " + x.toString)
 
       }
 
-    case x => log.info("\nin GpsdClient message not processed: " + x.toString)
+    case x => log.info("\nGpsdClient message not processed: " + x.toString)
 
   }
 

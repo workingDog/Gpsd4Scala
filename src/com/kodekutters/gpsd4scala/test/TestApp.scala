@@ -1,9 +1,9 @@
 package com.kodekutters.gpsd4scala.test
 
 import com.kodekutters.gpsd4scala.core.{GPSdLinker}
-import akka.actor.{ActorDSL, ActorSystem}
-import com.kodekutters.gpsd4scala.messages._
+import akka.actor.{Props, ActorDSL, ActorSystem}
 import com.kodekutters.gpsd4scala.collector.BasicCollector
+import com.kodekutters.gpsd4scala.messages.{Stop, Watch, Start, Register}
 
 /**
  * Author: Ringo Wathelet
@@ -13,23 +13,22 @@ import com.kodekutters.gpsd4scala.collector.BasicCollector
 
 object TestApp {
   def main(args: Array[String]) {
-    test1
-  }
 
-  def test1 = {
     implicit val system = ActorSystem("TestApp")
 
-      val collector = ActorDSL.actor(new BasicCollector())
-      val linker = ActorDSL.actor(new GPSdLinker("localhost", 2947))
-      linker ! RegisterCollector(collector)
-      Thread.sleep(1000)
-      linker ! Start
-      Thread.sleep(1000)
-      linker ! Watch
-      Thread.sleep(20000)
-      linker ! Stop
-      Thread.sleep(1000)
-      system.shutdown()
+    // create a collector that will receive the decoded gps data
+    val collector = system.actorOf(Props(classOf[BasicCollector]))
+    // create the client session actor
+    val linker = ActorDSL.actor(new GPSdLinker("localhost", 2947))
+    // register the collector
+    linker ! Register(collector)
+    Thread.sleep(1000)
+    // start the client to connect to the gpsd server
+    linker ! Start
+    Thread.sleep(1000)
+    // example of sending a command to the gpsd server
+    linker ! Watch
+
   }
 
 }

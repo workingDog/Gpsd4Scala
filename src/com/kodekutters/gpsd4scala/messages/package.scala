@@ -13,52 +13,43 @@ import com.kodekutters.gpsd4scala.types.{DeviceObject, WatchObject, TypeObject}
  * the messages used by the actors
  */
 
-  // for zero or one argument events
-  sealed trait Event
+//-------------------------------------------------------------
+//--------------Event------------------------------------------
+//-------------------------------------------------------------
 
-  // for two or more arguments events
-  sealed trait ComplexEvent
+case object Start
 
-  //-------------------------------------------------------------
-  //--------------Event------------------------------------------
-  //-------------------------------------------------------------
+case object Stop
 
-  case object Start extends Event
+case object Poll
 
-  case object Stop extends Event
+case object Watch
 
-  case object Poll extends Event
+case object Version
 
-  case object Watch extends Event
+case object Devices
 
-  case object Version extends Event
+case object Device
 
-  case object Devices extends Event
+case object ConnectionFailed
 
-  case object Device extends Event
+case object CloseAll
 
-  case object ConnectionFailed extends Event
-
-  case object CloseCollectors extends Event
-
-  case class CloseCollector(collector: ActorRef) extends Event
-
-  case class RegisterCollector(collector: ActorRef) extends Event
-
-  case class DeRegisterCollector(collector: ActorRef) extends Event
-
-  case class Collect(infoObj: TypeObject, others: Any*) extends Event
-
-  case class Device(deviceObj: DeviceObject) extends Event
-
-  case class Watch(watchObj: WatchObject) extends Event
+case object CloseCollector
 
 
-  //---------------------------------------------------------------
-  //--------------ComplexEvent------------------------------------
-  //---------------------------------------------------------------
+case class Close(collector: ActorRef)
 
-  case class RegisterCollectorForDevice(collector: ActorRef, deviceName: String) extends ComplexEvent
+case class Register(collector: ActorRef)
 
-  case class DeRegisterCollectorForDevice(collector: ActorRef, deviceName: String) extends ComplexEvent
+case class DeRegister(collector: ActorRef)
 
+case class Collect(infoObj: TypeObject, others: Any*)
+
+case class Device(deviceObj: DeviceObject)
+
+case class Watch(watchObj: WatchObject)
+
+case class RegisterForDevice(collector: ActorRef, deviceName: String)
+
+case class DeRegisterForDevice(collector: ActorRef, deviceName: String)

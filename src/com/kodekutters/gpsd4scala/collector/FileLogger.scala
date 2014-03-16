@@ -1,10 +1,11 @@
 package com.kodekutters.collector
 
-import com.kodekutters.gpsd4scala.messages.{CloseCollectors, Collect}
 import akka.actor.{ActorLogging, Actor}
 import java.io.File
 import com.kodekutters.gpsd4scala.collector.Collector
 import com.kodekutters.gpsd4scala.types.TypeObject
+import com.kodekutters.gpsd4scala.messages.{CloseCollector, CloseAll, Collect}
+
 
 /**
  * Author: Ringo Wathelet
@@ -13,9 +14,9 @@ import com.kodekutters.gpsd4scala.types.TypeObject
  */
 
 /**
- * example of a simple plain text file logger that records all messages received
- * Note: a CloseCollectors message should be sent to the FileLogger
- * before ending the session to close the text file.
+ * example of a simple plain text file logger that records all messages received.
+ * Note: a CloseAll or Close(collector) message should be sent to the FileLogger
+ * before ending the session in order to close the text file.
  */
 object FileLogger {
   def apply(fileName: String): FileLogger = new FileLogger(fileName)
@@ -31,7 +32,7 @@ class FileLogger(file: File) extends Actor with Collector with ActorLogging {
 
     case Collect(obj) => collect(obj)
 
-    case CloseCollectors =>
+    case CloseCollector =>
       writer.flush()
       writer.close()
   }
@@ -41,4 +42,3 @@ class FileLogger(file: File) extends Actor with Collector with ActorLogging {
     writer.write(info.toString + "\n")
   }
 }
-

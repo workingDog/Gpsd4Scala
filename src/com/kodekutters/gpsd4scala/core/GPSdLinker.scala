@@ -5,6 +5,11 @@ import java.net.InetSocketAddress
 import akka.actor.SupervisorStrategy.Restart
 import akka.actor.OneForOneStrategy
 import scala.concurrent.duration._
+import scala.util.{Failure, Success}
+import scala.concurrent.{ExecutionContext, Await}
+import akka.pattern.ask
+import akka.util.Timeout
+import ExecutionContext.Implicits.global
 import com.kodekutters.gpsd4scala.messages.ConnectionFailed
 
 /**
@@ -18,21 +23,27 @@ import com.kodekutters.gpsd4scala.messages.ConnectionFailed
  *
  * ref: http://www.catb.org/gpsd/
  *
- * @param address the socket address of the gpsd server, e.g. host name: localhost and port: 2947
+ * @param address the IP address of the gpsd server, e.g. localhost:2947
  */
-class GPSdLinker(address: java.net.InetSocketAddress) extends Actor with ActorLogging with CollectorManagement {
+class GPSdLinker(address: java.net.InetSocketAddress) extends Actor with ActorLogging with CollectorManager {
 
   def this(server: String, port: Int = 2947) = this(new InetSocketAddress(server, port))
 
+  implicit val timeout = Timeout(5 seconds)
+
   // the client that connects to the gpsd server
-  val gpsdClient = ActorDSL.actor(new GpsdClient(address, collectorList))
+  val gpsdClient = context.actorOf(Props(new GpsdClient(address, collectorList)))
 
   // supervise the client here ... TODO
 //  override val supervisorStrategy = OneForOneStrategy(maxNrOfRetries = 10, withinTimeRange = 1 minute) {
-//    case _ => Restart
+//    case _ => {
+//      log.info("\nin GPSdLinker supervisorStrategy Restart")
+//      Restart
+//    }
 //  }
 
-  def receive = collectorManagement orElse linkerReceive
+  // manage the collectors, then the linker receive
+  def receive = manageCollectors orElse linkerReceive
 
   def linkerReceive: Receive = {
 
@@ -43,8 +54,7 @@ class GPSdLinker(address: java.net.InetSocketAddress) extends Actor with ActorLo
       context.parent ! ConnectionFailed
       context stop self
 
-    // forward all other messages to the client
-    case x => gpsdClient forward x
+    // forward all other commands to the client
+    case cmd => gpsdClient forward cmd
   }
-
 }
