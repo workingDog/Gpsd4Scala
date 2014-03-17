@@ -103,7 +103,7 @@ here in the lib directory.
 
 # Dependencies
 
-Gpsd4Scala makes use of the Play json library part of the [Play framework](http://www.playframework.com/download),
+Gpsd4Scala uses the Play json library part of the [Play framework](http://www.playframework.com/download)
 and [Akka](http://akka.io/).
 
 Currently Gpsd4Scala is based on connecting to gpsd-3.8,
