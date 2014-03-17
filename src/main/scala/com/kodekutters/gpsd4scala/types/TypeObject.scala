@@ -122,7 +122,7 @@ object VersionObject {
   implicit val versionObjectFormat = Json.format[VersionObject]
 }
 
-// Note: currently only json format is supported, hence the default true
+// Note: currently only json format is supported, hence the default json=true
 case class WatchObject(enable: Option[Boolean] = Some(true), json: Option[Boolean] = Some(true),
                        nmea: Option[Boolean] = Some(false), raw: Option[Int] = None,
                        scaled: Option[Boolean] = None, timing: Option[Boolean] = None,

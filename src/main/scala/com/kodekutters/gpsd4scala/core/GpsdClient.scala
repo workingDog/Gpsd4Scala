@@ -56,6 +56,7 @@ class GpsdClient(val address: InetSocketAddress, val collectorList: mutable.Hash
           if (typeObjectList.isDefined)
             collectorList.foreach(collector => typeObjectList.get.foreach(typeObj => collector ! Collect(typeObj)))
 
+        // sending commands to the server
         case Watch => connection ! Write(ByteString("?WATCH;"))
 
         case Poll => connection ! Write(ByteString("?POLL;"))
@@ -70,21 +71,22 @@ class GpsdClient(val address: InetSocketAddress, val collectorList: mutable.Hash
 
         case Watch(watchObj) => connection ! Write(ByteString("?WATCH=" + Json.toJson(watchObj)))
 
-        case CommandFailed(w: Write) => log.info("\nGpsdClient CommandFailed ", w)
+        case data: ByteString => connection ! Write(data)
 
+        // receiving other types of messages
         case Close | Stop =>
           connection ! Close
           context stop self
 
-        case data: ByteString => connection ! Write(data)
+        case x: ConnectionClosed => context stop self
 
-        case _: ConnectionClosed => context stop self
+        case CommandFailed(w: Write) => log.info("\nGpsdClient CommandFailed ", w)
 
-        case x => log.info("\nGpsdClient message not processed: " + x.toString)
+        case x => log.info("\nGpsdClient message not actioned: " + x.toString)
 
       }
 
-    case x => log.info("\nGpsdClient message not processed: " + x.toString)
+    case x => log.info("\nGpsdClient message not actioned: " + x.toString)
 
   }
 
