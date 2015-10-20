@@ -3,7 +3,7 @@ package com.kodekutters.collector
 import akka.actor.{ActorLogging, Actor}
 import java.io.File
 import com.kodekutters.gpsd4scala.collector.Collector
-import com.kodekutters.gpsd4scala.types.TypeObject
+import com.kodekutters.gpsd4scala.protocol.Report
 import com.kodekutters.gpsd4scala.messages.{CloseCollector, CloseAll, Collect}
 
 /**
@@ -37,7 +37,7 @@ class FileLogger(file: File) extends Actor with Collector with ActorLogging {
   }
 
   // example of writing something to the file
-  def collect(info: TypeObject) {
+  def collect(info: Report) {
     writer.write(info.toString + "\n")
   }
 }

@@ -5,7 +5,7 @@ import scala.xml.PrettyPrinter
 import com.scalakml.io.KmlPrintWriter
 import com.scalakml.kml._
 import com.kodekutters.gpsd4scala.collector.Collector
-import com.kodekutters.gpsd4scala.types.{TPVObject, TypeObject}
+import com.kodekutters.gpsd4scala.protocol.{TPV, Report}
 import com.kodekutters.gpsd4scala.messages.Collect
 
 /**
@@ -47,9 +47,9 @@ class GoogleEarthCollector(val testFile: String) extends Actor with Collector wi
     case Collect(info) => collect(info)
   }
 
-  def collect(info: TypeObject) {
+  def collect(info: Report) {
     info match {
-      case tpv: TPVObject =>
+      case tpv: TPV =>
         // if have a 2d or 3d fix, proceed
         if (tpv.mode.get > 1) {
           // must have at least some values for the lat lon

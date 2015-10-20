@@ -50,11 +50,11 @@ class GpsdClient(val address: InetSocketAddress, val collectorList: mutable.Hash
 
         // receiving data from the gpsd server
         case Received(data) =>
-          // decode the data into a list of TypeObject
-          val typeObjectList = parser.parse(data)
-          // send all TypeObjects to the collectors
-          if (typeObjectList.isDefined)
-            collectorList.foreach(collector => typeObjectList.get.foreach(typeObj => collector ! Collect(typeObj)))
+          // decode the data into a list of Report
+          val reportList = parser.parse(data)
+          // send all Report to the collectors
+          if (reportList.isDefined)
+            collectorList.foreach(collector => reportList.get.foreach(report => collector ! Collect(report)))
 
         // sending commands to the server
         case Watch => connection ! Write(ByteString("?WATCH;"))

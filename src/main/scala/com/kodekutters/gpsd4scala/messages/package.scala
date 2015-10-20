@@ -1,7 +1,7 @@
 package com.kodekutters.gpsd4scala.messages
 
 import akka.actor.ActorRef
-import com.kodekutters.gpsd4scala.types.{DeviceObject, WatchObject, TypeObject}
+import com.kodekutters.gpsd4scala.protocol.Report
 
 /**
  * Author: Ringo Wathelet
@@ -40,11 +40,11 @@ case class Register(collector: ActorRef)
 
 case class DeRegister(collector: ActorRef)
 
-case class Collect(infoObj: TypeObject, others: Any*)
+case class Collect(infoObj: Report, others: Any*)
 
-case class Device(deviceObj: DeviceObject)
+case class Device(deviceObj: com.kodekutters.gpsd4scala.protocol.Device)
 
-case class Watch(watchObj: WatchObject)
+case class Watch(watchObj: com.kodekutters.gpsd4scala.protocol.Watch)
 
 case class RegisterForDevice(collector: ActorRef, deviceName: String)
 

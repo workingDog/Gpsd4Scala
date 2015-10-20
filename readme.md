@@ -79,17 +79,17 @@ Here is the typical structure of a collector actor showing the data arriving wit
 
       def receive = { case Collect(obj) => collect(obj) }
 
-      def collect(obj: TypeObject) {
-        obj match {
-          case x: TPVObject => println("TPVObject: " + obj.toString())
-          case x: VersionObject => println("VersionObject: " + obj.toString())
-          case x: DeviceObject => println("DeviceObject: " + obj.toString())
-          case _ => println("other object: " + obj.toString())
+      def collect(rep: Report) {
+        rep match {
+          case x: TPV => println("TPV: " + rep.toString)
+          case x: Version => println("Version: " + rep.toString)
+          case x: Device => println("Device: " + rep.toString)
+          case _ => println("other report: " + rep.toString)
         }
       }
     }
 
-where "TypeObject" such as TPVObject, DeviceObject etc... are the scala objects representing
+where "Report" such as TPV, Version, Device etc... are the scala objects representing
 the core gpsd socket protocol as described [here](http://catb.org/gpsd/gpsd_json.html).
 
 Other example collectors can be found in the collector directory such as:

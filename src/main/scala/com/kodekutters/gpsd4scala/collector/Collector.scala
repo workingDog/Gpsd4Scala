@@ -1,6 +1,6 @@
 package com.kodekutters.gpsd4scala.collector
 
-import com.kodekutters.gpsd4scala.types.TypeObject
+import com.kodekutters.gpsd4scala.protocol.Report
 
 /**
  * Author: Ringo Wathelet
@@ -9,5 +9,5 @@ import com.kodekutters.gpsd4scala.types.TypeObject
  */
 
 trait Collector {
-  def collect(info: TypeObject)
+  def collect(info: Report)
 }
