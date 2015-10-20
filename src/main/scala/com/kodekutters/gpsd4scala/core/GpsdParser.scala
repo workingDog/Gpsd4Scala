@@ -10,17 +10,17 @@ import play.api.libs.json._
   */
 
 /**
-  * parse the (json) ByteString received from the gpsd server into TypeObjects
+  * parse the (json) ByteString received from the gpsd server into Report objects
   */
 class GpsdParser {
 
   /**
     * parse the input ByteString which may contain multiple json objects,
-    * into a corresponding list of TypeObjects
+    * into a corresponding list of Report objects
     *
     * @param data the input ByteString to parse, this is split on new line "\\r?\\n"
     *             to extract possible multiple json objects
-    * @return an optional list of TypeObjects corresponding to the input json objects
+    * @return an optional list of Report objects corresponding to the input json objects
     */
   def parse(data: akka.util.ByteString): Option[List[Report]] = {
     try {
@@ -34,9 +34,9 @@ class GpsdParser {
   }
 
   /**
-    * parse a string assumed to represent only one json TypeObject
+    * parse a string assumed to represent only one json Report object
     * @param line the string to parse
-    * @return a TypeObject
+    * @return a Report object
     */
   def parseOne(line: String): Option[Report] = {
     try {

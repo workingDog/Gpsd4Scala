@@ -27,7 +27,7 @@ class GpsdClient(val address: InetSocketAddress, val collectorList: mutable.Hash
   import Tcp._
   import context.system
 
-  // the parser to decode the messages from gpsd into corresponding TypeObjects
+  // the parser to decode the messages from gpsd into corresponding Report objects
   val parser = new GpsdParser()
 
   def receive = {

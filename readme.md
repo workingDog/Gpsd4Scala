@@ -65,7 +65,7 @@ Other commands can also be sent to the gpsd daemon such as:
 Note: to give the linker time to setup the connection and process the commands, it is
 advisable to wait for a second or two.
 
-In your application, simply include the gpsd4scala jar file from the [target directory](https://github.com/workingDog/Gpsd4Scala/tree/master/target/scala-2.10).
+In your application, simply include the gpsd4scala jar file that can be generated using [SBT](http://www.scala-sbt.org/).
 
 # How to collect the data
 

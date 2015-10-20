@@ -12,7 +12,7 @@ import com.kodekutters.gpsd4scala.messages.{CloseCollector, Close, CloseAll, Col
 
 /**
  * a basic example of collecting the data from the gpsd server,
- * it shows all the possible TypeObject that can be handled
+ * it shows all the possible Report objects that can be handled
  */
 class BasicCollector extends Actor with Collector with ActorLogging {
 
