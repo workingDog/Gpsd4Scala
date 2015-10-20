@@ -2,14 +2,6 @@ package com.kodekutters.gpsd4scala.core
 
 import akka.actor._
 import java.net.InetSocketAddress
-import akka.actor.SupervisorStrategy.Restart
-import akka.actor.OneForOneStrategy
-import scala.concurrent.duration._
-import scala.util.{Failure, Success}
-import scala.concurrent.{ExecutionContext, Await}
-import akka.pattern.ask
-import akka.util.Timeout
-import ExecutionContext.Implicits.global
 import com.kodekutters.gpsd4scala.messages.ConnectionFailed
 
 /**
@@ -27,18 +19,8 @@ class GPSdLinker(address: java.net.InetSocketAddress) extends Actor with ActorLo
 
   def this(server: String, port: Int = 2947) = this(new InetSocketAddress(server, port))
 
-  implicit val timeout = Timeout(5 seconds)
-
   // the client that connects to the gpsd server
   val gpsdClient = context.actorOf(GpsdClient.props(address, collectorList), "client")
-
-  // supervise the client here ... TODO
-  //  override val supervisorStrategy = OneForOneStrategy(maxNrOfRetries = 10, withinTimeRange = 1 minute) {
-  //    case _ => {
-  //      log.info("\nin GPSdLinker supervisorStrategy Restart")
-  //      Restart
-  //    }
-  //  }
 
   // manage the collectors, then the linker receive
   def receive = manageCollectors orElse linkerReceive
