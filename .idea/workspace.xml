@@ -6,17 +6,169 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f37a7445-8cf0-435e-92d3-e56f7d3552fc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/core/GpsdClient.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/core/GpsdClient.scala" />
+    <list default="true" id="f37a7445-8cf0-435e-92d3-e56f7d3552fc" name="Default" comment="update to scala 2.11&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/streams/$global/$global/$global/out" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/streams/$global/ivySbt/$global/out" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/streams/$global/projectDescriptors/$global/out" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/inputs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/output" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/streams/compile/$global/$global/data" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/streams/compile/compile/$global/export" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/streams/compile/copyResources/$global/copy-resources" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/streams/compile/definedSbtPlugins/$global/out" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_fasterxml_jackson_core_jackson_annotations_2_5_4_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_fasterxml_jackson_core_jackson_core_2_5_4_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_fasterxml_jackson_core_jackson_databind_2_5_4_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_5_4_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_5_4_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_akka_akka_actor_2_11_2_4_0_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_config_1_3_0_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_play_play_datacommons_2_11_2_4_3_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_play_play_functional_2_11_2_4_3_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_play_play_iteratees_2_11_2_4_3_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_play_play_json_2_11_2_4_3_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__joda_time_joda_time_2_8_1_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__junit_junit_4_12_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_ccil_cowan_tagsoup_tagsoup_1_2_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_hamcrest_hamcrest_core_1_3_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_joda_joda_convert_1_7_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_mockito_mockito_core_1_9_5_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_objenesis_objenesis_1_0_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_ow2_asm_asm_4_1_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_ow2_asm_asm_analysis_4_1_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_ow2_asm_asm_tree_4_1_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_ow2_asm_asm_util_4_1_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_parboiled_parboiled_core_1_1_4_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_parboiled_parboiled_java_1_1_4_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_pegdown_pegdown_1_2_1_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_scala_lang_modules_scala_parser_combinators_2_11_1_0_3_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_scala_lang_modules_scala_xml_2_11_1_0_3_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_scala_lang_scala_compiler_2_11_6_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_scala_lang_scala_library_2_11_7_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_scala_lang_scala_reflect_2_11_6_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_scala_sbt_test_interface_1_0_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_scala_stm_scala_stm_2_11_0_7_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_scalacheck_scalacheck_2_11_1_12_2_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_scalaz_scalaz_concurrent_2_11_7_1_1_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_scalaz_scalaz_core_2_11_7_1_1_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_scalaz_scalaz_effect_2_11_7_1_1_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_scalaz_stream_scalaz_stream_2_11_0_7a_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_scodec_scodec_bits_2_11_1_0_6_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_specs2_classycle_1_4_3_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_specs2_specs2_2_11_3_3_1_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/resolution-cache/default/gpsd4scala-sbt-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/resolution-cache/default/gpsd4scala-sbt-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/resolution-cache/default/scala-client-sbt-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/resolution-cache/default/scala-client-sbt-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-gpsd4scala-sbt-build-compile-internal.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-gpsd4scala-sbt-build-compile.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-gpsd4scala-sbt-build-docs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-gpsd4scala-sbt-build-optional.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-gpsd4scala-sbt-build-plugin.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-gpsd4scala-sbt-build-pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-gpsd4scala-sbt-build-provided.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-gpsd4scala-sbt-build-runtime-internal.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-gpsd4scala-sbt-build-runtime.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-gpsd4scala-sbt-build-scala-tool.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-gpsd4scala-sbt-build-sources.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-gpsd4scala-sbt-build-test-internal.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-gpsd4scala-sbt-build-test.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-scala-client-sbt-build-compile-internal.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-scala-client-sbt-build-compile.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-scala-client-sbt-build-docs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-scala-client-sbt-build-optional.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-scala-client-sbt-build-plugin.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-scala-client-sbt-build-pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-scala-client-sbt-build-provided.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-scala-client-sbt-build-runtime-internal.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-scala-client-sbt-build-runtime.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-scala-client-sbt-build-scala-tool.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-scala-client-sbt-build-sources.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-scala-client-sbt-build-test-internal.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-scala-client-sbt-build-test.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/ivy-report.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/ivy-report.xsl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/streams/$global/ivyConfiguration/$global/out" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/out" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/streams/compile/compile/$global/out" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/streams/compile/copyResources/$global/out" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/streams/compile/dependencyClasspath/$global/export" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/streams/compile/exportedProducts/$global/export" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/streams/compile/externalDependencyClasspath/$global/export" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/streams/compile/internalDependencyClasspath/$global/export" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/streams/compile/managedClasspath/$global/export" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/streams/compile/unmanagedClasspath/$global/export" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/streams/compile/unmanagedJars/$global/export" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/streams/runtime/dependencyClasspath/$global/export" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/streams/runtime/exportedProducts/$global/export" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/streams/runtime/externalDependencyClasspath/$global/export" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/$global/export" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/streams/runtime/internalDependencyClasspath/$global/export" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/streams/runtime/managedClasspath/$global/export" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/streams/runtime/unmanagedClasspath/$global/export" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/streams/runtime/unmanagedJars/$global/export" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_fasterxml_jackson_core_jackson_annotations_2_2_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_fasterxml_jackson_core_jackson_core_2_2_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_fasterxml_jackson_core_jackson_databind_2_2_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_akka_akka_actor_2_10_2_3_0_RC4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_config_1_2_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_play_play_datacommons_2_10_2_2_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_play_play_functional_2_10_2_2_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_play_play_iteratees_2_10_2_2_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_play_play_json_2_10_2_2_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__joda_time_joda_time_2_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__junit_junit_4_11.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_hamcrest_hamcrest_core_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_joda_joda_convert_1_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_mockito_mockito_core_1_9_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_objenesis_objenesis_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_ow2_asm_asm_4_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_ow2_asm_asm_analysis_4_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_ow2_asm_asm_tree_4_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_ow2_asm_asm_util_4_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_parboiled_parboiled_core_1_1_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_parboiled_parboiled_java_1_1_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_pegdown_pegdown_1_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_scala_lang_scala_compiler_2_10_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_scala_lang_scala_library_2_10_4_RC3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_scala_lang_scala_reflect_2_10_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_scala_sbt_test_interface_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_scala_stm_scala_stm_2_10_0_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_scalacheck_scalacheck_2_10_1_11_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_scalamacros_quasiquotes_2_10_3_2_0_0_M3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_scalaz_scalaz_concurrent_2_10_7_0_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_scalaz_scalaz_core_2_10_7_0_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_scalaz_scalaz_effect_2_10_7_0_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_specs2_classycle_1_4_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_specs2_specs2_2_10_2_3_8.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/scalakml.jar" afterPath="$PROJECT_DIR$/lib/scalakml.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/scalaxal.jar" afterPath="$PROJECT_DIR$/lib/scalaxal.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/highlighting.xml" afterPath="$PROJECT_DIR$/.idea/highlighting.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/gpsd4scala-build.iml" afterPath="$PROJECT_DIR$/.idea/modules/gpsd4scala-build.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/gpsd4scala.iml" afterPath="$PROJECT_DIR$/.idea/modules/gpsd4scala.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sbt.xml" afterPath="$PROJECT_DIR$/.idea/sbt.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/scala_settings.xml" afterPath="$PROJECT_DIR$/.idea/scala_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.sbt" afterPath="$PROJECT_DIR$/build.sbt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/build.properties" afterPath="$PROJECT_DIR$/project/build.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/src/main/scala/META-INF/MANIFEST.MF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/core/GpsdParser.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/core/GpsdParser.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/types/TypeObject.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/types/TypeObject.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ivy-report.css" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ivy-report.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ivy-report.xsl" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ivy-report.xsl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Gpsd4Scala.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/project/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/project/project/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,11 +179,8 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="DaemonCodeAnalyzer">
-    <disable_hints />
-  </component>
   <component name="DebuggerManager">
-    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true" converted="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
         <option name="NOTIFY_UNCAUGHT" value="true" />
@@ -67,74 +216,87 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <breakpoint_rules />
-    <ui_properties />
+    <breakpoint_rules converted="true" />
+    <ui_properties converted="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="SBT">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="Gpsd4Scala" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Example1.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/examples/Example1.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="33" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="792">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="readme.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/readme.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="5" selection-start="2846" selection-end="2846" vertical-scroll-proportion="15.12" vertical-offset="1786" max-vertical-offset="2662">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BasicCollector.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/collector/BasicCollector.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="11" selection-start="455" selection-end="455" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="968">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CollectorManager.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/core/CollectorManager.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="17" selection-start="401" selection-end="401" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="880">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GpsdClient.scala" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/core/GpsdClient.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="57" selection-start="703" selection-end="703" vertical-scroll-proportion="-0.68368477" vertical-offset="1100" max-vertical-offset="2112">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GPSdLinker.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/core/GPSdLinker.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="42" selection-start="1113" selection-end="1113" vertical-scroll-proportion="0.0" vertical-offset="419" max-vertical-offset="1320">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GpsdParser.scala" pinned="false" current="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="GpsdParser.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/core/GpsdParser.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="31" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.0" vertical-offset="758" max-vertical-offset="1672">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="26" column="82" selection-start-line="26" selection-start-column="82" selection-end-line="26" selection-end-column="82" />
+              <folding>
+                <element signature="e#41#82#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TypeObject.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/types/TypeObject.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="142" column="12" selection-start-line="142" selection-start-column="12" selection-end-line="142" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readme.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readme.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.0785877">
+              <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GPSdLinker.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/core/GPSdLinker.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GpsdClient.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/core/GpsdClient.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="41" column="54" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Example1.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/examples/Example1.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -160,46 +322,27 @@
       <MyDateState />
     </option>
   </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
-    <option name="changedFiles">
+    <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/scalaGPS/gpsd/Gpsd4Scala-backup/Gpsd4Scala-19-04-2013-6pm/src/com/kodekutters/gpsd4scala/test/TestApp.scala" />
-        <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/collector/ViewerCollector.scala" />
-        <option value="$USER_HOME$/scalaGPS/gpsd/howtogpsd.txt" />
-        <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/ExtraProductFormats.scala" />
-        <option value="$PROJECT_DIR$/../../Gpsd4Scala/Gpsd4Scala-21-04-2013-3pm/howtogpsd.txt" />
-        <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/CollectorManagement.scala" />
-        <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/collector/BasicCollector.scala" />
-        <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/collector/GoogleEarthCollector.scala" />
-        <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/GPSdLinker.scala" />
-        <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/GpsdParser.scala" />
-        <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/types/TypeObject.scala" />
-        <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/CollectorManager.scala" />
-        <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/messages/package.scala" />
-        <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/collector/FileLogger.scala" />
-        <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/core/GpsdClient.scala" />
-        <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/test/TestApp.scala" />
-        <option value="$PROJECT_DIR$/../Gpsd4Scala-sbt/build.sbt" />
-        <option value="$PROJECT_DIR$/src/com/kodekutters/gpsd4scala/examples/Example1.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/collector/FileLogger.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/collector/GoogleEarthCollector.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/core/CollectorManager.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/messages/package.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/test/TestApp.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/examples/Example1.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/core/GPSdLinker.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/collector/BasicCollector.scala" />
+        <option value="$PROJECT_DIR$/project/build.properties" />
+        <option value="$PROJECT_DIR$/build.sbt" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/core/GpsdParser.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/types/TypeObject.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/core/GpsdClient.scala" />
         <option value="$PROJECT_DIR$/readme.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="142" />
-    <option name="y" value="22" />
-    <option name="width" value="1565" />
-    <option name="height" value="1058" />
+    <option name="x" value="130" />
+    <option name="y" value="32" />
+    <option name="width" value="1659" />
+    <option name="height" value="1030" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -215,7 +358,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -225,10 +368,11 @@
       <autoscrollToSource />
       <autoscrollFromSource />
       <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -244,38 +388,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Gpsd4Scala" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gpsd4Scala" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gpsd4Scala" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gpsd4Scala" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gpsd4Scala" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scala-2.10" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -383,36 +495,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="messages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gpsd4Scala" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gpsd4Scala" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scala" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gpsd4scala" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="examples" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -473,27 +555,46 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="collector" />
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GpsdClient.scala" />
+              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gpsd4Scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gpsd4Scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="org.jetbrains.plugins.scala.settings.ScalaProjectSettingsConfigurable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../java/joda-convert-1.5/joda-convert-1.5.jar!/" />
-    <property name="project.structure.side.proportion" value="0.27647534" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.side.proportion" value="0.34382978" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -503,6 +604,7 @@
   </component>
   <component name="RunManager" selected="Application.Example1">
     <configuration default="false" name="TestApp" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="com.kodekutters.gpsd4scala.test.TestApp" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -519,6 +621,7 @@
       <method />
     </configuration>
     <configuration default="false" name="Example1" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="com.kodekutters.gpsd4scala.examples.Example1" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -534,10 +637,39 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
       <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
+      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
+      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
       <method />
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
@@ -558,19 +690,132 @@
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
+      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
+      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
-      <setting name="path" value="" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="" />
-      <setting name="testKind" value="Class" />
-      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="gpsd4scala" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -581,7 +826,38 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -608,54 +884,36 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
+    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" />
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
+        <value defaultName="singleModule" />
       </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
       <envs />
-      <patterns />
+      <properties />
+      <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+    <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
       <setting name="path" value="" />
       <setting name="package" value="" />
@@ -666,25 +924,7 @@
       <setting name="testName" value="" />
       <setting name="testKind" value="Class" />
       <setting name="showProgressMessages" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <envs />
       <method />
     </configuration>
     <list size="2">
@@ -703,6 +943,7 @@
     </configuration>
   </component>
   <component name="SbtLocalSettings">
+    <option name="lastUpdateTimestamp" value="1445329484722" />
     <option name="availableProjects">
       <map>
         <entry>
@@ -729,332 +970,357 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="1394916258000" />
+        <entry key="$PROJECT_DIR$" value="1445329476000" />
       </map>
     </option>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
-    <option name="USER" value="" />
-    <option name="PASSWORD" value="" />
-    <option name="mySSHConnectionTimeout" value="30000" />
-    <option name="mySSHReadTimeout" value="30000" />
-    <option name="LAST_MERGED_REVISION" />
-    <option name="MERGE_DRY_RUN" value="false" />
-    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
-    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
-    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
-    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
-    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
-    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
-    <option name="FORCE_UPDATE" value="false" />
-    <option name="IGNORE_EXTERNALS" value="false" />
-    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  <component name="SvnConfiguration" myUseAcceleration="nothing">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="f37a7445-8cf0-435e-92d3-e56f7d3552fc" name="Default" comment="" />
       <created>1366267652449</created>
+      <option name="number" value="Default" />
       <updated>1366267652449</updated>
-    </task>
-    <task id="LOCAL-00001" summary="initial commit">
-      <created>1366591190716</created>
-      <updated>1366591190717</updated>
-    </task>
-    <task id="LOCAL-00002" summary="initial commit">
-      <created>1366591347859</created>
-      <updated>1366591347859</updated>
-    </task>
-    <task id="LOCAL-00003" summary="initial commit">
-      <created>1366591398119</created>
-      <updated>1366591398119</updated>
-    </task>
-    <task id="LOCAL-00004" summary="initial commit">
-      <created>1366591447171</created>
-      <updated>1366591447171</updated>
-    </task>
-    <task id="LOCAL-00005" summary="initial commit">
-      <created>1366592037389</created>
-      <updated>1366592037389</updated>
-    </task>
-    <task id="LOCAL-00006" summary="initial commit">
-      <created>1366592485922</created>
-      <updated>1366592485922</updated>
-    </task>
-    <task id="LOCAL-00007" summary="initial commit">
-      <created>1366592699255</created>
-      <updated>1366592699255</updated>
-    </task>
-    <task id="LOCAL-00008" summary="initial commit">
-      <created>1366595900318</created>
-      <updated>1366595900318</updated>
-    </task>
-    <task id="LOCAL-00009" summary="initial commit">
-      <created>1366605354218</created>
-      <updated>1366605354219</updated>
-    </task>
-    <task id="LOCAL-00010" summary="initial commit">
-      <created>1366605428676</created>
-      <updated>1366605428676</updated>
-    </task>
-    <task id="LOCAL-00011" summary="initial commit">
-      <created>1366605479333</created>
-      <updated>1366605479334</updated>
-    </task>
-    <task id="LOCAL-00012" summary="initial commit">
-      <created>1366605554996</created>
-      <updated>1366605554996</updated>
-    </task>
-    <task id="LOCAL-00013" summary="initial commit">
-      <created>1366605926209</created>
-      <updated>1366605926209</updated>
-    </task>
-    <task id="LOCAL-00014" summary="initial commit">
-      <created>1366606149040</created>
-      <updated>1366606149040</updated>
-    </task>
-    <task id="LOCAL-00015" summary="initial commit">
-      <created>1366608250693</created>
-      <updated>1366608250693</updated>
-    </task>
-    <task id="LOCAL-00016" summary="initial commit">
-      <created>1366608354123</created>
-      <updated>1366608354123</updated>
-    </task>
-    <task id="LOCAL-00017" summary="initial commit">
-      <created>1366612495067</created>
-      <updated>1366612495067</updated>
-    </task>
-    <task id="LOCAL-00018" summary="initial commit">
-      <created>1366615727764</created>
-      <updated>1366615727764</updated>
     </task>
     <task id="LOCAL-00019" summary="initial commit">
       <created>1366615907927</created>
+      <option name="number" value="00019" />
+      <option name="project" value="LOCAL" />
       <updated>1366615907928</updated>
     </task>
     <task id="LOCAL-00020" summary="initial commit">
       <created>1366618356467</created>
+      <option name="number" value="00020" />
+      <option name="project" value="LOCAL" />
       <updated>1366618356467</updated>
     </task>
     <task id="LOCAL-00021" summary="initial commit">
       <created>1366632381615</created>
+      <option name="number" value="00021" />
+      <option name="project" value="LOCAL" />
       <updated>1366632381615</updated>
     </task>
     <task id="LOCAL-00022" summary="initial commit">
       <created>1366674191304</created>
+      <option name="number" value="00022" />
+      <option name="project" value="LOCAL" />
       <updated>1366674191304</updated>
     </task>
     <task id="LOCAL-00023" summary="initial commit">
       <created>1366674658648</created>
+      <option name="number" value="00023" />
+      <option name="project" value="LOCAL" />
       <updated>1366674658648</updated>
     </task>
     <task id="LOCAL-00024" summary="initial commit">
       <created>1366675510824</created>
+      <option name="number" value="00024" />
+      <option name="project" value="LOCAL" />
       <updated>1366675510824</updated>
     </task>
     <task id="LOCAL-00025" summary="initial commit">
       <created>1366675788006</created>
+      <option name="number" value="00025" />
+      <option name="project" value="LOCAL" />
       <updated>1366675788006</updated>
     </task>
     <task id="LOCAL-00026" summary="initial commit">
       <created>1366677677437</created>
+      <option name="number" value="00026" />
+      <option name="project" value="LOCAL" />
       <updated>1366677677437</updated>
     </task>
     <task id="LOCAL-00027" summary="initial commit">
       <created>1366685271004</created>
+      <option name="number" value="00027" />
+      <option name="project" value="LOCAL" />
       <updated>1366685271004</updated>
     </task>
     <task id="LOCAL-00028" summary="initial commit">
       <created>1366719510545</created>
+      <option name="number" value="00028" />
+      <option name="project" value="LOCAL" />
       <updated>1366719510545</updated>
     </task>
     <task id="LOCAL-00029" summary="initial commit">
       <created>1366720134799</created>
+      <option name="number" value="00029" />
+      <option name="project" value="LOCAL" />
       <updated>1366720134799</updated>
     </task>
     <task id="LOCAL-00030" summary="initial commit">
       <created>1366721008527</created>
+      <option name="number" value="00030" />
+      <option name="project" value="LOCAL" />
       <updated>1366721008527</updated>
     </task>
     <task id="LOCAL-00031" summary="initial commit">
       <created>1366721101588</created>
+      <option name="number" value="00031" />
+      <option name="project" value="LOCAL" />
       <updated>1366721101588</updated>
     </task>
     <task id="LOCAL-00032" summary="initial commit">
       <created>1366721258973</created>
+      <option name="number" value="00032" />
+      <option name="project" value="LOCAL" />
       <updated>1366721258973</updated>
     </task>
     <task id="LOCAL-00033" summary="initial commit">
       <created>1366722253898</created>
+      <option name="number" value="00033" />
+      <option name="project" value="LOCAL" />
       <updated>1366722253898</updated>
     </task>
     <task id="LOCAL-00034" summary="initial commit">
       <created>1366722316558</created>
+      <option name="number" value="00034" />
+      <option name="project" value="LOCAL" />
       <updated>1366722316558</updated>
     </task>
     <task id="LOCAL-00035" summary="initial commit">
       <created>1366723424348</created>
+      <option name="number" value="00035" />
+      <option name="project" value="LOCAL" />
       <updated>1366723424348</updated>
     </task>
     <task id="LOCAL-00036" summary="initial commit">
       <created>1366723835863</created>
+      <option name="number" value="00036" />
+      <option name="project" value="LOCAL" />
       <updated>1366723835863</updated>
     </task>
     <task id="LOCAL-00037" summary="initial commit">
       <created>1366757320617</created>
+      <option name="number" value="00037" />
+      <option name="project" value="LOCAL" />
       <updated>1366757320617</updated>
     </task>
     <task id="LOCAL-00038" summary="initial commit">
       <created>1366759611736</created>
+      <option name="number" value="00038" />
+      <option name="project" value="LOCAL" />
       <updated>1366759611736</updated>
     </task>
     <task id="LOCAL-00039" summary="initial commit">
       <created>1366759764640</created>
+      <option name="number" value="00039" />
+      <option name="project" value="LOCAL" />
       <updated>1366759764640</updated>
     </task>
     <task id="LOCAL-00040" summary="initial commit">
       <created>1366759882382</created>
+      <option name="number" value="00040" />
+      <option name="project" value="LOCAL" />
       <updated>1366759882382</updated>
     </task>
     <task id="LOCAL-00041" summary="initial commit">
       <created>1366766994196</created>
+      <option name="number" value="00041" />
+      <option name="project" value="LOCAL" />
       <updated>1366766994196</updated>
     </task>
     <task id="LOCAL-00042" summary="initial commit">
       <created>1366768231612</created>
+      <option name="number" value="00042" />
+      <option name="project" value="LOCAL" />
       <updated>1366768231612</updated>
     </task>
     <task id="LOCAL-00043" summary="initial commit">
       <created>1366776813400</created>
+      <option name="number" value="00043" />
+      <option name="project" value="LOCAL" />
       <updated>1366776813400</updated>
     </task>
     <task id="LOCAL-00044" summary="initial commit">
       <created>1366777336924</created>
+      <option name="number" value="00044" />
+      <option name="project" value="LOCAL" />
       <updated>1366777336924</updated>
     </task>
     <task id="LOCAL-00045" summary="initial commit">
       <created>1366777730265</created>
+      <option name="number" value="00045" />
+      <option name="project" value="LOCAL" />
       <updated>1366777730265</updated>
     </task>
     <task id="LOCAL-00046" summary="initial commit">
       <created>1366844025602</created>
+      <option name="number" value="00046" />
+      <option name="project" value="LOCAL" />
       <updated>1366844025602</updated>
     </task>
     <task id="LOCAL-00047" summary="initial commit">
       <created>1366844341662</created>
+      <option name="number" value="00047" />
+      <option name="project" value="LOCAL" />
       <updated>1366844341662</updated>
     </task>
     <task id="LOCAL-00048" summary="initial commit">
       <created>1366844611363</created>
+      <option name="number" value="00048" />
+      <option name="project" value="LOCAL" />
       <updated>1366844611363</updated>
     </task>
     <task id="LOCAL-00049" summary="initial commit">
       <created>1366845695674</created>
+      <option name="number" value="00049" />
+      <option name="project" value="LOCAL" />
       <updated>1366845695674</updated>
     </task>
     <task id="LOCAL-00050" summary="initial commit">
       <created>1366845773090</created>
+      <option name="number" value="00050" />
+      <option name="project" value="LOCAL" />
       <updated>1366845773090</updated>
     </task>
     <task id="LOCAL-00051" summary="initial commit">
       <created>1366846343627</created>
+      <option name="number" value="00051" />
+      <option name="project" value="LOCAL" />
       <updated>1366846343627</updated>
     </task>
     <task id="LOCAL-00052" summary="initial commit">
       <created>1366846728104</created>
+      <option name="number" value="00052" />
+      <option name="project" value="LOCAL" />
       <updated>1366846728104</updated>
     </task>
     <task id="LOCAL-00053" summary="initial commit">
       <created>1367111024160</created>
+      <option name="number" value="00053" />
+      <option name="project" value="LOCAL" />
       <updated>1367111024161</updated>
     </task>
     <task id="LOCAL-00054" summary="initial commit">
       <created>1367121472787</created>
+      <option name="number" value="00054" />
+      <option name="project" value="LOCAL" />
       <updated>1367121472788</updated>
     </task>
     <task id="LOCAL-00055" summary="initial commit">
       <created>1367121841731</created>
+      <option name="number" value="00055" />
+      <option name="project" value="LOCAL" />
       <updated>1367121841731</updated>
     </task>
     <task id="LOCAL-00056" summary="initial commit">
       <created>1368250375116</created>
+      <option name="number" value="00056" />
+      <option name="project" value="LOCAL" />
       <updated>1368250375116</updated>
     </task>
     <task id="LOCAL-00057" summary="initial commit">
       <created>1368942711728</created>
+      <option name="number" value="00057" />
+      <option name="project" value="LOCAL" />
       <updated>1368942711728</updated>
     </task>
     <task id="LOCAL-00058" summary="update to Play-json">
       <created>1394936161139</created>
+      <option name="number" value="00058" />
+      <option name="project" value="LOCAL" />
       <updated>1394936161139</updated>
     </task>
     <task id="LOCAL-00059" summary="update to Play-json&#10;">
       <created>1394939628602</created>
+      <option name="number" value="00059" />
+      <option name="project" value="LOCAL" />
       <updated>1394939628602</updated>
     </task>
     <task id="LOCAL-00060" summary="update to Play-json&#10;">
       <created>1394940026102</created>
+      <option name="number" value="00060" />
+      <option name="project" value="LOCAL" />
       <updated>1394940026102</updated>
     </task>
     <task id="LOCAL-00061" summary="update to Play-json&#10;">
       <created>1394940985396</created>
+      <option name="number" value="00061" />
+      <option name="project" value="LOCAL" />
       <updated>1394940985396</updated>
     </task>
     <task id="LOCAL-00062" summary="update to Play-json&#10;">
       <created>1394941886792</created>
+      <option name="number" value="00062" />
+      <option name="project" value="LOCAL" />
       <updated>1394941886792</updated>
     </task>
     <task id="LOCAL-00063" summary="update to Play-json&#10;">
       <created>1394968854060</created>
+      <option name="number" value="00063" />
+      <option name="project" value="LOCAL" />
       <updated>1394968854060</updated>
     </task>
     <task id="LOCAL-00064" summary="update to Play-json&#10;">
       <created>1394969177610</created>
+      <option name="number" value="00064" />
+      <option name="project" value="LOCAL" />
       <updated>1394969177611</updated>
     </task>
     <task id="LOCAL-00065" summary="update to Play-json&#10;">
       <created>1394969351644</created>
+      <option name="number" value="00065" />
+      <option name="project" value="LOCAL" />
       <updated>1394969351644</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="update to Play-json&#10;">
+      <created>1395030033352</created>
+      <option name="number" value="00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1395030033352</updated>
+    </task>
+    <task id="LOCAL-00067" summary="update to Play-json&#10;">
+      <created>1395030193351</created>
+      <option name="number" value="00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1395030193351</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="142" y="22" width="1565" height="1058" extended-state="0" />
+    <frame x="130" y="32" width="1659" height="1030" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18577495" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3535032" sideWeight="0.99941826" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="SBT Execute" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18343195" sideWeight="0.806163" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2983015" sideWeight="0.9914686" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32908705" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27058825" sideWeight="0.99941826" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17254174" sideWeight="0.806163" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="SBT Execute" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18577495" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2983015" sideWeight="0.9914686" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32801822" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
       <collection />
     </option>
   </component>
@@ -1062,348 +1328,397 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="myTodoPanelSettings">
-      <TodoPanelSettings />
-    </option>
     <MESSAGE value="initial commit" />
     <MESSAGE value="update to Play-json" />
     <MESSAGE value="update to Play-json&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="update to Play-json&#10;" />
+    <MESSAGE value="update to scala 2.11&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="update to scala 2.11&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
+    <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/core/GpsdClient.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="75" column="39" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/core/GPSdLinker.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/core/GpsdParser.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="31" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/examples/Example1.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0" vertical-offset="220" max-vertical-offset="858">
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="1869" selection-end="1869" vertical-scroll-proportion="0.0" vertical-offset="640" max-vertical-offset="2662">
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/collector/BasicCollector.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="11" selection-start="455" selection-end="455" vertical-scroll-proportion="0.0" vertical-offset="352" max-vertical-offset="1078">
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="11" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/core/CollectorManager.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="374" selection-end="374" vertical-scroll-proportion="0.0" vertical-offset="264" max-vertical-offset="990">
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/core/GpsdClient.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="0" selection-start="1565" selection-end="1565" vertical-scroll-proportion="0.0" vertical-offset="1254" max-vertical-offset="2222">
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/core/GPSdLinker.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="42" selection-start="1113" selection-end="1113" vertical-scroll-proportion="0.0" vertical-offset="770" max-vertical-offset="1540">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="42" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/core/GpsdParser.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="31" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.0" vertical-offset="836" max-vertical-offset="1716">
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="31" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/examples/Example1.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0" vertical-offset="220" max-vertical-offset="858">
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="1869" selection-end="1869" vertical-scroll-proportion="0.0" vertical-offset="640" max-vertical-offset="2662">
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/collector/BasicCollector.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="11" selection-start="455" selection-end="455" vertical-scroll-proportion="0.0" vertical-offset="352" max-vertical-offset="1078">
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="11" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/core/CollectorManager.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="374" selection-end="374" vertical-scroll-proportion="0.0" vertical-offset="264" max-vertical-offset="990">
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/core/GpsdClient.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="0" selection-start="1565" selection-end="1565" vertical-scroll-proportion="0.0" vertical-offset="1254" max-vertical-offset="2222">
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/core/GPSdLinker.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="42" selection-start="1113" selection-end="1113" vertical-scroll-proportion="0.0" vertical-offset="770" max-vertical-offset="1540">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="42" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/core/GpsdParser.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="31" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.0" vertical-offset="836" max-vertical-offset="1716">
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="31" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/examples/Example1.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="3" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="858">
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="3" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="1980" selection-end="1980" vertical-scroll-proportion="0.0" vertical-offset="640" max-vertical-offset="2662">
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/collector/BasicCollector.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="9" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0" vertical-offset="352" max-vertical-offset="1078">
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="9" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/core/CollectorManager.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="21" selection-start="486" selection-end="486" vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="990">
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/core/GpsdClient.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="38" selection-start="684" selection-end="684" vertical-scroll-proportion="0.0" vertical-offset="638" max-vertical-offset="2222">
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="38" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/core/GPSdLinker.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="19" selection-start="1199" selection-end="1199" vertical-scroll-proportion="0.0" vertical-offset="792" max-vertical-offset="1540">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="19" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/core/GpsdParser.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="5" selection-start="1054" selection-end="1054" vertical-scroll-proportion="0.0" vertical-offset="792" max-vertical-offset="1716">
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="5" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/examples/Example1.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="25" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="880">
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/core/GpsdClient.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="0" selection-start="1996" selection-end="1996" vertical-scroll-proportion="0.0" vertical-offset="1496" max-vertical-offset="2090">
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="68" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/core/GPSdLinker.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="28" selection-start="1219" selection-end="1219" vertical-scroll-proportion="0.0" vertical-offset="814" max-vertical-offset="1408">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/core/GpsdParser.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="5" selection-start="1054" selection-end="1054" vertical-scroll-proportion="0.0" vertical-offset="792" max-vertical-offset="1716">
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="5" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/examples/Example1.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="32" selection-start="786" selection-end="786" vertical-scroll-proportion="0.0" vertical-offset="528" max-vertical-offset="880">
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="32" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="0" selection-start="4011" selection-end="4011" vertical-scroll-proportion="0.0" vertical-offset="1786" max-vertical-offset="2662">
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="90" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/core/GpsdClient.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="22" selection-start="1173" selection-end="1173" vertical-scroll-proportion="0.0" vertical-offset="1034" max-vertical-offset="2090">
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="47" column="22" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/core/GPSdLinker.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="3" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="1408">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="3" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/core/GpsdParser.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="24" selection-start="541" selection-end="541" vertical-scroll-proportion="0.0" vertical-offset="484" max-vertical-offset="1716">
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="24" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/examples/Example1.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0" vertical-offset="264" max-vertical-offset="880">
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Dropbox/scalagps/devices.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="34" selection-start="102" selection-end="102" vertical-scroll-proportion="0.049493812" vertical-offset="0" max-vertical-offset="889" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.sbt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="458" selection-end="458" vertical-scroll-proportion="0.4573304" vertical-offset="0" max-vertical-offset="914" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/messages/package.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="11" selection-start="505" selection-end="505" vertical-scroll-proportion="0.51859957" vertical-offset="296" max-vertical-offset="1210">
-          <folding />
+        <state vertical-scroll-proportion="0.049493812">
+          <caret line="2" column="34" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/collector/GoogleEarthCollector.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="1475" selection-end="1475" vertical-scroll-proportion="0.4384018" vertical-offset="529" max-vertical-offset="1430">
-          <folding />
+        <state vertical-scroll-proportion="0.4384018">
+          <caret line="48" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/collector/FileLogger.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="25" selection-start="309" selection-end="309" vertical-scroll-proportion="0.09190372" vertical-offset="26" max-vertical-offset="968">
-          <folding />
+        <state vertical-scroll-proportion="0.09190372">
+          <caret line="9" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/build.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="739" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/collector/Collector.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="6" selection-start="172" selection-end="172" vertical-scroll-proportion="0.2976996" vertical-offset="0" max-vertical-offset="739">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/types/TypeObject.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="73" selection-start="6143" selection-end="6143" vertical-scroll-proportion="1.0255272" vertical-offset="1804" max-vertical-offset="7238" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/examples/Example1.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="33" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="792">
-          <folding />
+        <state vertical-scroll-proportion="0.2976996">
+          <caret line="10" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/srcs/akka-actor_2.10-2.3.0-RC4-sources.jar!/akka/io/Tcp.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="187" column="14" selection-start="7103" selection-end="7103" vertical-scroll-proportion="0.33296338" vertical-offset="3550" max-vertical-offset="17402">
+        <state vertical-scroll-proportion="0.33296338">
+          <caret line="187" column="14" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/core/CollectorManager.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30498177">
+          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/collector/BasicCollector.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3432836">
+          <caret line="13" column="52" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/core/GpsdParser.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="31" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="1672">
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="82" selection-start-line="26" selection-start-column="82" selection-end-line="26" selection-end-column="82" />
+          <folding>
+            <element signature="e#41#82#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/core/GPSdLinker.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="42" selection-start="1113" selection-end="1113" vertical-scroll-proportion="0.0" vertical-offset="1" max-vertical-offset="1320">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/messages/package.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49283352">
+          <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/core/GpsdClient.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="54" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/test/TestApp.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="3" selection-start="981" selection-end="981" vertical-scroll-proportion="0.7461707" vertical-offset="0" max-vertical-offset="914">
+        <state vertical-scroll-proportion="0.17750826">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/examples/Example1.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/types/TypeObject.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="142" column="12" selection-start-line="142" selection-start-column="12" selection-end-line="142" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/build.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="20" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="5" selection-start="2846" selection-end="2846" vertical-scroll-proportion="15.12" vertical-offset="1786" max-vertical-offset="2662">
+        <state vertical-scroll-proportion="1.0785877">
+          <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/collector/BasicCollector.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="11" selection-start="455" selection-end="455" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="968">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/core/CollectorManager.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="17" selection-start="401" selection-end="401" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="880">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/kodekutters/gpsd4scala/core/GpsdClient.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="57" selection-start="703" selection-end="703" vertical-scroll-proportion="-0.68368477" vertical-offset="1100" max-vertical-offset="2112">
-          <folding />
-        </state>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
   </component>
@@ -1435,7 +1750,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Scala (gpsd4scala)|Scala</last-edited>
+          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1447,11 +1762,11 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>scala-2.10.4-RC4</last-edited>
+          <last-edited>scala-sdk-2.11.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.34382978" />
               </list>
             </option>
           </splitter-proportions>
@@ -1459,11 +1774,11 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.7</last-edited>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.34382978" />
               </list>
             </option>
           </splitter-proportions>
@@ -1471,11 +1786,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Scala|gpsd4scala</last-edited>
+          <last-edited>gpsd4scala</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.27647534" />
+                <option value="0.34382978" />
               </list>
             </option>
           </splitter-proportions>
@@ -1495,11 +1810,11 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>SBT: org.specs2:specs2_2.10:2.3.8</last-edited>
+          <last-edited>SBT: com.fasterxml.jackson.core:jackson-databind:2.2.2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.27647534" />
+                <option value="0.34382978" />
               </list>
             </option>
           </splitter-proportions>
@@ -1508,4 +1823,3 @@
     </states>
   </component>
 </project>
-

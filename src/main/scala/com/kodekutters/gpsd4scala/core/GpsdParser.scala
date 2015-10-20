@@ -1,28 +1,27 @@
 package com.kodekutters.gpsd4scala.core
 
-import scala.Some
 import com.kodekutters.gpsd4scala.types._
 import play.api.libs.json._
 
 /**
- * Author: Ringo Wathelet
- * Date: 18/04/13
- * Version: 1
- */
+  * Author: Ringo Wathelet
+  * Date: 18/04/13
+  * Version: 1
+  */
 
 /**
- * parse the (json) ByteString received from the gpsd server into TypeObjects
- */
+  * parse the (json) ByteString received from the gpsd server into TypeObjects
+  */
 class GpsdParser {
 
   /**
-   * parse the input ByteString which may contain multiple json objects,
-   * into a corresponding list of TypeObjects
-   *
-   * @param data the input ByteString to parse, this is split on new line "\\r?\\n"
-   *             to extract possible multiple json objects
-   * @return an optional list of TypeObjects corresponding to the input json objects
-   */
+    * parse the input ByteString which may contain multiple json objects,
+    * into a corresponding list of TypeObjects
+    *
+    * @param data the input ByteString to parse, this is split on new line "\\r?\\n"
+    *             to extract possible multiple json objects
+    * @return an optional list of TypeObjects corresponding to the input json objects
+    */
   def parse(data: akka.util.ByteString): Option[List[TypeObject]] = {
     try {
       // split the data string on a new line, in case it has multiple json objects
@@ -35,14 +34,14 @@ class GpsdParser {
   }
 
   /**
-   * parse a string assumed to represent only one json TypeObject
-   * @param line the string to parse
-   * @return a TypeObject
-   */
-   def parseOne(line: String): Option[TypeObject] = {
+    * parse a string assumed to represent only one json TypeObject
+    * @param line the string to parse
+    * @return a TypeObject
+    */
+  def parseOne(line: String): Option[TypeObject] = {
     try {
       val jsMsg = Json.parse(line)
-      val clazz = jsMsg \ "class"
+      val clazz = (jsMsg \ "class").getOrElse(JsString(""))
       clazz match {
         case JsString("GST") => Json.fromJson[GSTObject](jsMsg).asOpt
         case JsString("TPV") => Json.fromJson[TPVObject](jsMsg).asOpt
@@ -66,6 +65,8 @@ class GpsdParser {
         //        case JsString("SUBFRAME") => Json.fromJson[SUBFRAMEObject](jsMsg).asOpt)
         case _ => None
       }
+    } catch {
+      case _: Throwable => None
     }
   }
 

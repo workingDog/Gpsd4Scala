@@ -3,10 +3,10 @@ package com.kodekutters.gpsd4scala.types
 import play.api.libs.json.Json
 
 /**
- * Author: Ringo Wathelet
- * Date: 18/04/13 
- * Version: 1
- */
+  * Author: Ringo Wathelet
+  * Date: 18/04/13
+  * Version: 1
+  */
 
 // references: http://catb.org/gpsd/gpsd_json.html,
 // http://catb.org/gpsd/client-howto.html and gpsd_json.c
@@ -17,19 +17,6 @@ import play.api.libs.json.Json
 
 trait TypeObject {}
 
-//case class ATTObject(tag: Option[String] = None, device: Option[String] = None, time: Option[String] = None,
-//                     heading: Option[Double] = None,
-//                     pitch: Option[Double] = None, pitch_st: Option[String] = None,
-//                     yaw: Option[Double] = None, yaw_st: Option[String] = None,
-//                     roll: Option[Double] = None, roll_st: Option[String] = None,
-//                     dip: Option[Double] = None, acc_len: Option[Double] = None,
-//                     acc_x: Option[Double] = None, acc_y: Option[Double] = None,
-//                     acc_z: Option[Double] = None, gyro_x: Option[Double] = None,
-//                     mag_len: Option[Double] = None, mag_x: Option[Double] = None,
-//                     mag_y: Option[Double] = None, mag_z: Option[Double] = None,
-//                     gyro_y: Option[Double] = None, depth: Option[Double] = None,
-//                     temp: Option[Double] = None) extends TypeObject
-
 // todo ...  missing mag because would make case class parameter limit > 22
 case class ATTObject(tag: Option[String] = None, device: Option[String] = None, time: Option[String] = None,
                      heading: Option[Double] = None,
@@ -39,6 +26,8 @@ case class ATTObject(tag: Option[String] = None, device: Option[String] = None, 
                      dip: Option[Double] = None, acc_len: Option[Double] = None,
                      acc_x: Option[Double] = None, acc_y: Option[Double] = None,
                      acc_z: Option[Double] = None, gyro_x: Option[Double] = None,
+                     //     mag_len: Option[Double] = None, mag_x: Option[Double] = None,
+                     //     mag_y: Option[Double] = None, mag_z: Option[Double] = None,
                      gyro_y: Option[Double] = None, depth: Option[Double] = None,
                      temp: Option[Double] = None) extends TypeObject
 
