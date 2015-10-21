@@ -41,7 +41,7 @@ class GoogleEarthCollector(val testFile: String) extends Actor with Collector wi
   val kml = new Kml(new NetworkLink("TestLink", new Link(testFile, OnInterval, 2)))
 
   // print the network link to file
-  new KmlPrintWriter("NetworkLink_" + testFile).write(Option(kml), new PrettyPrinter(80, 3))
+  new KmlPrintWriter("NetworkLink_" + testFile).write(kml, new PrettyPrinter(80, 3))
 
   def receive = {
     case Collect(info) => collect(info)
@@ -57,7 +57,7 @@ class GoogleEarthCollector(val testFile: String) extends Actor with Collector wi
             val alt = if (tpv.alt.isDefined) tpv.alt.get else 0.0
             val kml = new Kml(new Placemark("test", new Point(RelativeToGround, tpv.lon.get, tpv.lat.get, alt)))
             // write the placemark to the kml file
-            new KmlPrintWriter(testFile).write(Option(kml), new PrettyPrinter(80, 3))
+            new KmlPrintWriter(testFile).write(kml, new PrettyPrinter(80, 3))
           }
         }
     }

@@ -54,15 +54,15 @@ class GpsdParser {
         case JsString("POLL") => Json.fromJson[Poll](jsMsg).asOpt
         case JsString("PPS") => Json.fromJson[PPS](jsMsg).asOpt
         case JsString("ERROR") => Json.fromJson[Error](jsMsg).asOpt
-        //        case JsString("ALMANAC") => Json.fromJson[ALMANACObject](jsMsg).asOpt)
-        //        case JsString("EPHEM1") => Json.fromJson[EPHEM1Object](jsMsg).asOpt)
-        //        case JsString("EPHEM2") => Json.fromJson[EPHEM2Object](jsMsg).asOpt)
-        //        case JsString("EPHEM3") => Json.fromJson[EPHEM3Object](jsMsg).asOpt)
-        //        case JsString("ERD") => Json.fromJson[ERDObject](jsMsg).asOpt)
-        //        case JsString("HEALTH") => Json.fromJson[HEALTHObject](jsMsg).asOpt)
-        //        case JsString("HEALTH2") => Json.fromJson[HEALTH2Object](jsMsg).asOpt)
-        //        case JsString("IONO") => Json.fromJson[IONOObject](jsMsg).asOpt)
-        //        case JsString("SUBFRAME") => Json.fromJson[SUBFRAMEObject](jsMsg).asOpt)
+        //        case JsString("ALMANAC") => Json.fromJson[ALMANACObject](jsMsg).asOpt
+        //        case JsString("EPHEM1") => Json.fromJson[EPHEM1Object](jsMsg).asOpt
+        //        case JsString("EPHEM2") => Json.fromJson[EPHEM2Object](jsMsg).asOpt
+        //        case JsString("EPHEM3") => Json.fromJson[EPHEM3Object](jsMsg).asOpt
+        //        case JsString("ERD") => Json.fromJson[ERDObject](jsMsg).asOpt
+        //        case JsString("HEALTH") => Json.fromJson[HEALTHObject](jsMsg).asOpt
+        //        case JsString("HEALTH2") => Json.fromJson[HEALTH2Object](jsMsg).asOpt
+        //        case JsString("IONO") => Json.fromJson[IONOObject](jsMsg).asOpt
+        //        case JsString("SUBFRAME") => Json.fromJson[SUBFRAMEObject](jsMsg).asOpt
         case _ => None
       }
     } catch {
